@@ -1,10 +1,10 @@
 :root {
-  --box-shadow: #00000070;
-  --link-color: #1f1534;
-  --link-hover-color: #000;
-  --quote: #7d7987;
-  --button-background: #458ff6;
-  --text-color: #ffffff;
+	--box-shadow: #00000070;
+	--link-color: #1f1534;
+	--link-hover-color: #000;
+	--quote: #7d7987;
+	--button-background: #458ff6;
+	--text-color: #ffffff;
 }
 * {
 	margin: 0;
@@ -21,22 +21,25 @@ body {
 
 .container {
 	width: 100%;
+	
 }
 
 .container-wrapper {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+    
 }
 .nav {
 	width: 100%;
-	box-shadow: 0 0 10px -5px var(--box-shadow);
+	/* box-shadow: 0 0 10px -5px var(--box-shadow); */
 	height: 100px;
 	position: sticky;
 	top: 0px;
 	display: flex;
 	align-items: center;
 	z-index: 9999999;
+	transition: all 0.5s ease-in-out;
 }
 .navigation {
 	display: flex;
@@ -55,7 +58,7 @@ body {
 	color: var(--link-color);
 	font-family: 'Mulish', sans-serif;
 	margin: 17px;
-    font-size: 18px;
+	font-size: 18px;
 	font-weight: 400;
 	transition: all 0.3s ease-in-out;
 }
@@ -75,20 +78,18 @@ body {
 	display: flex;
 	width: 80%;
 	margin: 0 auto;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
 }
 .info {
-	padding-top: 120px;
-	
-    width: 40%;
+    margin-right: 20px;
 }
 .info .head {
 	font-size: 48px;
 	line-height: 56px;
 	font-family: 'Mulish', sans-serif;
 	font-weight: bold;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 .info .quoto {
 	font-family: 'Mulish', sans-serif;
@@ -97,6 +98,7 @@ body {
 	color: var(--quote);
 	font-size: 21px;
 	line-height: 32px;
+    width: 80%;
 }
 
 .info button {
