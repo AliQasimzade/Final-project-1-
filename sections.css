@@ -1,13 +1,14 @@
 main {
 	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	margin-top: 220px;
 }
 
 main section:first-child {
 	width: 80%;
-	margin: 0 auto;
 	display: flex;
     align-items: center;
 	justify-content: space-between;
@@ -72,7 +73,6 @@ main section:nth-child(2) {
 main section:last-child{
     display: flex;
     width: 80%;
-	margin: 0 auto;
     align-items: center;
     justify-content: space-between;
 }

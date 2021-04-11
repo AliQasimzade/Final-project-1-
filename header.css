@@ -1,7 +1,7 @@
 :root {
   --box-shadow: #00000070;
   --link-color: #1f1534;
-  --link-hover-color: #000;
+  --link-hover-color: black;
   --quote: #7d7987;
   --button-background: #458ff6;
   --text-color: #ffffff;
@@ -16,7 +16,7 @@
 html,
 body {
   width: 100%;
-  height: 800vh;
+ 
 }
 
 .container {
@@ -24,17 +24,19 @@ body {
 }
 
 .container-wrapper {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .nav {
   width: 100%;
-  height: 100px;
+  height: 80px;
   position: fixed;
-
+  top:0;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 9;
   transition: all 0.5s ease-in-out;
 }
@@ -45,7 +47,6 @@ body {
 .navigation {
   display: flex;
   width: 80%;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -63,24 +64,34 @@ body {
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
+.links a:not(:nth-child(1)){
+  opacity: 0.5;
+}
 .links a:first-child {
   font-weight: 700;
 }
 .links a:hover {
   color: var(--link-hover-color);
+  opacity: 1;
 }
 .banner-wrapper {
   width: 100%;
   background-image: url("./images/element.png");
   background-repeat: no-repeat;
   margin-top: 144px;
+  margin-bottom: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .banner {
   display: flex;
   width: 80%;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
+}
+.banner .image img{
+  margin: 0px;
 }
 .info {
   margin-right: 20px;
