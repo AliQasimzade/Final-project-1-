@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
 	box-sizing: border-box;
-    background-image: url('./images/element\ \(1\).png');
+    background-image: url('./images/element\ \(4\).png');
     background-repeat: no-repeat;
     background-position: 90% 15%;
 }
@@ -9,15 +9,23 @@ footer {
 .footer-container {
 	width: 100%;
     margin-top: 129px;
+	background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+    
+}
+.footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
-    padding-bottom: 50px;
+	width: 100%;
+	background-image: url("./images/element\ \(3\).png");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	
 }
 
 .footer-wrapper {
 	width: 80%;
+	padding-bottom: 100px;
 }
 .footer-wrapper ul {
 	width: 100%;

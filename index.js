@@ -7,7 +7,7 @@ window.onscroll = function () {
 };
 
 function myFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 10) {
     document.querySelector(".nav").classList.add("active");
   } else {
     document.querySelector(".nav").classList.remove("active");
