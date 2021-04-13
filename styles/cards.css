@@ -109,9 +109,22 @@
   line-height: 28px;
   color: #4089ed;
   cursor: pointer;
+  
 }
 .card .read .read-wrapper button img {
   margin-left: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.card .read .read-wrapper button:hover img{
+  animation:x-scroll 0.3s linear forwards;
+}
+@keyframes x-scroll{
+  from{
+     transform: translateX(0px);
+  }to{
+    transform: translateX(8px);
+  }
 }
 .cards-wrapper .view {
   width: 200px;
@@ -188,7 +201,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 30px;
+    column-gap: 10px;
     row-gap: 30px;
     place-items: center;
     grid-template-areas: "card-1 card-2"
