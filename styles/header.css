@@ -74,7 +74,7 @@ body {
 }
 .banner-wrapper {
   width: 100%;
-  background-image: url("./images/element.png");
+  background-image: url("../images/element.png");
   background-repeat: no-repeat;
   margin-top: 144px;
   margin-bottom: 190px;
@@ -91,6 +91,9 @@ body {
 .banner .health-image img {
   margin: 0px;
 }
+.health-info{
+  width: 40%;
+}
 
 .health-info .health-heading {
   font-size: 48px;
@@ -98,6 +101,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-weight: bold;
   margin-bottom: 30px;
+  
 }
 .health-info .health-quote {
   font-family: "Mulish", sans-serif;
@@ -106,7 +110,7 @@ body {
   color: var(--quote);
   font-size: 21px;
   line-height: 32px;
-  width: 80%;
+  
 }
 
 .health-info button {
@@ -153,10 +157,10 @@ svg.active #bottom {
   stroke-dasharray: 75.39;
   stroke-dashoffset: -60;
 }
+svg.active path{
+  stroke: red;
+}
 @media only screen and (max-width: 800px) {
-  .banner {
-    width: 100%;
-  }
   .banner-wrapper {
     margin-bottom: 100px;
   }
@@ -168,6 +172,7 @@ svg.active #bottom {
     font-size: 15px;
     margin-bottom: 30px;
   }
+
   .banner .health-info {
     width: 100%;
     display: flex;
@@ -214,18 +219,18 @@ svg.active #bottom {
     margin-bottom: 10px;
   }
   .health-info button {
-    width: 150px;
-    height: 36px;
-    font-size: 16px;
+    width: 160px;
+    height: 50px;
+    font-size: 15px;
   }
   .banner-wrapper .banner .health-image img {
-    width: 370px;
+    width: 330px;
   }
   .banner-wrapper {
     background-image: none;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
   .nav .navigation img {
     width: 130px;
   }
@@ -233,10 +238,11 @@ svg.active #bottom {
     font-size: 16px;
   }
   .banner .health-image img {
-    width: 380px;
+    width: 390px;
   }
   .health-info .health-heading {
     font-size: 30px;
+    margin-bottom: 10px;
   }
   .health-info .health-quote {
     font-size: 16px;

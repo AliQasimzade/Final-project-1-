@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/element\ \(2\).png");
+  background-image: url("../images/element\ \(2\).png");
   background-repeat: no-repeat;
   background-position: right;
   margin-top: 216px;
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./images/element\ \(1\).png");
+  background-image: url("../images/element\ \(1\).png");
   background-repeat: no-repeat;
   background-position: 1% 20%;
 }
@@ -132,4 +132,79 @@
 .cards-wrapper .view:hover {
   color: #ffffff;
   background-color: #458ff6;
+}
+@media only screen and (max-width:500px){
+  .cards-wrapper .cards-el .card{
+    width: 260px;
+  }
+  .cards-wrapper .article p{
+    font-size: 22px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  .card .read .read-wrapper p:nth-child(1){
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card .read .read-wrapper p:nth-child(2){
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+ .cards-wrapper .cards-el .card .read .read-wrapper button{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:750px){
+  .cards{
+    background-image: none;
+  }
+  .cards-wrapper{
+    background-image: none;
+  }
+  .cards-wrapper .cards-el{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards-wrapper .cards-el .card button{
+   font-size: 16px;
+  }
+  .cards-wrapper .view{
+    width: 156px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .cards-wrapper .article{
+    margin-bottom: 40px;
+  }
+  .article p{
+    font-size: 30px;
+  }
+  .cards-wrapper .view{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:1400px){
+  .cards-el{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    place-items: center;
+    grid-template-areas: "card-1 card-2"
+    "card-3 card-3";
+  }
+  .cards-el .card:nth-child(1){
+    grid-area: card-1;
+   
+  }
+  .cards-el .card:nth-child(2){
+    grid-area: card-2;
+   
+  }
+  .cards-el .card:nth-child(3){
+    grid-area: card-3;
+    
+  }
+  
 }

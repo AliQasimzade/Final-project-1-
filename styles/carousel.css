@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./images/Group\ \(1\).png");
+  background-image: url("../images/Group\ \(1\).png");
   background-repeat: no-repeat;
   background-position: 1% 80%;
 }
@@ -19,7 +19,7 @@
   border-radius: 24px;
   height: 425px;
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
-  overflow: hidden;
+ overflow: hidden;
 }
 .carousel-length {
   width: 400%;
@@ -31,12 +31,13 @@
   height: 100%;
 }
 
+
 .slider:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("./images/Group.png");
+  background-image: url("../images/Group.png");
   background-repeat: no-repeat;
   background-position: 104% 4%;
 }
@@ -98,7 +99,7 @@
 .block {
   font-family: Mulish;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 19px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.9);
@@ -129,4 +130,90 @@
   margin-left: 91px;
   font-size: 20px;
   color: #458ff6;
+}
+@media only screen and (max-width:860px){
+  .carousel-wrapper{
+    width: 100%;
+  }
+  .carousel{
+    border-radius: 0px;
+  }
+  .carousel-container{
+    margin-top: 150px;
+  }
+ .carousel-length .slider{
+    background-image: none;
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+  .carousel-length .slider .sel{
+    margin-bottom: 10px;
+  }
+  .slider .slider-info{
+    flex-direction: column;
+    height: 80%;
+  }
+   .slider .slider-info .image img{
+    width: 80px;
+    height:80px;
+    margin-right: 10px;
+  }
+  .carousel-length .slider .sel p:nth-child(1){
+    font-size:20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .carousel-length .slider .sel .arrow{
+    margin-bottom: 0px;
+  }
+  .image{
+    margin-bottom: 15px;
+  }
+  .image .parag .span{
+    font-size: 14px;
+  }
+  .image .parag .h1{
+     font-size: 17px;
+     line-height: 30px;
+  }
+  .slider .block{
+    width: 90%;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .carousel-container .carousel-wrapper.dots{
+    justify-content: space-evenly;
+  }
+  .dots .dot{
+    display: none;
+  }
+  .dots .arr-1,.arr-2{
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width:1172px){
+   .slider .sel p:nth-child(1){
+    font-size:25px;
+  }
+  .slider-info{
+    padding: 0;
+    justify-content: space-around;
+  }
+  .slider-info .image img{
+    width: 100px;
+    height: 100px;
+  }
+   .parag .h1{
+     font-size: 19px;
+     line-height: 35px;
+  }
+  .parag .span{
+    font-size: 16px;
+  }
+  .block{
+    font-size: 15px;
+  }
 }
