@@ -1,0 +1,87 @@
+@media only screen and (max-width: 800px) {
+	.banner-wrapper {
+		margin-bottom: 100px;
+	}
+	.banner .health-info .health-heading {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.banner .health-info .health-article {
+		font-size: 15px;
+		margin-bottom: 30px;
+	}
+
+	.banner .health-info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.banner .health-image {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1172px) {
+	.navigation nav {
+		position: absolute;
+		height: 100vh;
+		display: flex;
+		left: 0;
+		overflow: hidden;
+		flex-direction: column;
+		justify-content: center;
+		top: 60px;
+		width: 0;
+		background-color: #f8f9fa;
+		transition: all 0.4s ease-in-out;
+	}
+	.navigation nav a {
+		display: block;
+	}
+	.navigation .hamburger-button {
+		display: block;
+		font-size: 22px;
+	}
+
+	.navigation nav.active {
+		width: 100%;
+	}
+	.health-info .health-heading {
+		margin-bottom: 10px;
+		line-height: 30px;
+	}
+	.health-info .health-article {
+		margin-bottom: 10px;
+	}
+	.health-info button {
+		width: 160px;
+		height: 50px;
+		font-size: 15px;
+	}
+	.banner-wrapper .banner .health-image img {
+		width: 330px;
+	}
+	.banner-wrapper {
+		background-image: none;
+	}
+}
+@media only screen and (max-width: 1500px) {
+	header .navigation img {
+		width: 130px;
+	}
+	.navigation nav a {
+		font-size: 16px;
+	}
+	.banner .health-image img {
+		width: 390px;
+	}
+	.health-info .health-heading {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.health-info .health-article {
+		font-size: 16px;
+	}
+}

@@ -1,219 +1,133 @@
 .carousel-container {
-  width: 100%;
-  margin-top: 251px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 100%;
+	margin-top: 251px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .carousel-wrapper {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("../images/Group\ \(1\).png");
-  background-repeat: no-repeat;
-  background-position: 1% 80%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../images/Group\ \(1\).png');
+	background-repeat: no-repeat;
+	background-position: 1% 80%;
+	position: relative;
 }
 .carousel {
-  width: 100%;
-  border-radius: 24px;
-  height: 425px;
-  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
- overflow: hidden;
+	width: 100%;
+	border-radius: 24px;
+	height: 425px;
+	background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+	overflow: hidden;
 }
-.carousel-length {
-  width: 400%;
-  display: flex;
-  height: 100%;
+.slider-container {
+	width: 400%;
+	display: flex;
+	height: 100%;
 }
-.carousel-length .slider {
-  width: 100%;
-  height: 100%;
+.slider-container .slider {
+	width: 100%;
+	height: 100%;
 }
-
 
 .slider:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../images/Group.png");
-  background-repeat: no-repeat;
-  background-position: 104% 4%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url('../images/Group.png');
+	background-repeat: no-repeat;
+	background-position: 104% 4%;
 }
-.slider:first-child .sel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
+.slider:first-child .slider-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
 }
-.slider:first-child .sel p {
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
-  color: #ffffff;
-  margin-bottom: 25px;
+.slider:first-child .slider-header p {
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	color: var(--text-color);
+	margin-bottom: 25px;
 }
-.sel .arrow {
-  background-color: #fff;
-  width: 56px;
-  height: 2px;
-  border-radius: 6px;
+.slider-header .line {
+	background-color: var(--text-color);
+	width: 56px;
+	height: 2px;
+	border-radius: 6px;
 }
 
 .slider-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 80px 0 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 80px 0 80px;
 }
-.image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.slider-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.image .parag {
-  display: flex;
-  flex-direction: column;
+.slider-image .profile {
+	display: flex;
+	flex-direction: column;
 }
-.image img {
-  margin-right: 29px;
+.slider-image img {
+	margin-right: 29px;
 }
-.image .h1 {
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 48px;
-  color: #ffffff;
+.slider-image .name {
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 48px;
+	color: var(--text-color);
 }
-.image .span {
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.85);
+.slider-image .job {
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.85);
 }
-.block {
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.9);
-  width: 45%;
+.slider-article {
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 30px;
+	color: rgba(255, 255, 255, 0.9);
+	width: 45%;
 }
-.dots {
-  display: flex;
-  align-items: center;
-  margin-top: 42px;
+.dots-arrows {
+	display: flex;
+	align-items: center;
+	margin-top: 42px;
 }
-.dots i {
-  cursor: pointer;
+.dots-arrows i {
+	cursor: pointer;
 }
-.dots .dot {
-  margin-right: 18px;
-  width: 10px;
-  height: 10px;
-  color: #e5e5e5;
-  font-size: 8px;
-}
-
-.dots .arr-1 {
-  margin-right: 91px;
-  font-size: 20px;
-  color: #458ff6;
-}
-.dots .arr-2 {
-  margin-left: 91px;
-  font-size: 20px;
-  color: #458ff6;
-}
-@media only screen and (max-width:860px){
-  .carousel-wrapper{
-    width: 100%;
-  }
-  .carousel{
-    border-radius: 0px;
-  }
-  .carousel-container{
-    margin-top: 150px;
-  }
- .carousel-length .slider{
-    background-image: none;
-    justify-content: flex-start;
-    padding-top: 50px;
-  }
-  .carousel-length .slider .sel{
-    margin-bottom: 10px;
-  }
-  .slider .slider-info{
-    flex-direction: column;
-    height: 80%;
-  }
-   .slider .slider-info .image img{
-    width: 80px;
-    height:80px;
-    margin-right: 10px;
-  }
-  .carousel-length .slider .sel p:nth-child(1){
-    font-size:20px;
-    margin-bottom: 20px;
-    line-height: 25px;
-    text-align: center;
-  }
-  .carousel-length .slider .sel .arrow{
-    margin-bottom: 0px;
-  }
-  .image{
-    margin-bottom: 15px;
-  }
-  .image .parag .span{
-    font-size: 14px;
-  }
-  .image .parag .h1{
-     font-size: 17px;
-     line-height: 30px;
-  }
-  .slider .block{
-    width: 90%;
-    font-size: 14px;
-    line-height: 25px;
-    text-align: center;
-  }
-  .carousel-container .carousel-wrapper.dots{
-    justify-content: space-evenly;
-  }
-  .dots .dot{
-    display: none;
-  }
-  .dots .arr-1,.arr-2{
-    margin: 0;
-  }
+.dots-arrows .dot {
+	margin-right: 18px;
+	width: 10px;
+	height: 10px;
+	color: #e5e5e5;
+	font-size: 8px;
 }
 
-@media only screen and (max-width:1172px){
-   .slider .sel p:nth-child(1){
-    font-size:25px;
-  }
-  .slider-info{
-    padding: 0;
-    justify-content: space-around;
-  }
-  .slider-info .image img{
-    width: 100px;
-    height: 100px;
-  }
-   .parag .h1{
-     font-size: 19px;
-     line-height: 35px;
-  }
-  .parag .span{
-    font-size: 16px;
-  }
-  .block{
-    font-size: 15px;
-  }
+.dots-arrows .arrow-left {
+	margin-right: 91px;
+	font-size: 20px;
+	color: var(--primary-color);
+}
+.dots-arrows .arrow-right {
+	margin-left: 91px;
+	font-size: 20px;
+	color: var(--primary-color);
 }

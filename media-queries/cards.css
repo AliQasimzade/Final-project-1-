@@ -1,0 +1,63 @@
+@media only screen and (max-width: 550px) {
+	.cards-wrapper .cards-container .card {
+		width: 250px;
+	}
+	.cards-wrapper .article p {
+		font-size: 22px;
+		margin-bottom: 18px;
+		text-align: center;
+	}
+	.card .card-info-container .card-info p:nth-child(1) {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.card .card-info-container .card-info p:nth-child(2) {
+		font-size: 14px;
+		margin-bottom: 6px;
+	}
+	.cards-wrapper .cards-container .card .card-info-container .card-info button {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 850px) {
+	.cards {
+		background-image: none;
+	}
+	.cards-wrapper {
+		background-image: none;
+	}
+	.cards-wrapper .cards-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.cards-wrapper .cards-container .card button {
+		font-size: 16px;
+	}
+	.cards-wrapper .view {
+		width: 156px;
+		height: 50px;
+		font-size: 15px;
+	}
+	.cards-wrapper .article {
+		margin-bottom: 40px;
+	}
+	.article p {
+		font-size: 30px;
+	}
+	.cards-wrapper .view {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1212px) {
+	.cards-container {
+		display: grid;
+		grid-template-columns: repeat(2, 350px);
+		grid-template-rows: repeat(2, 1fr);
+		row-gap: 30px;
+		column-gap: 20px;
+		place-items: center;
+	}
+	.cards-container .card {
+		margin: 0;
+	}
+}

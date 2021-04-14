@@ -8,19 +8,19 @@ window.onscroll = function () {
 
 function myFunction() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    document.querySelector(".nav").classList.add("active");
+    document.querySelector("body header").classList.add("active");
   } else {
-    document.querySelector(".nav").classList.remove("active");
+    document.querySelector("body header").classList.remove("active");
   }
 }
 let flag = true;
 
 hamburgerButton.addEventListener("click", () => {
   if (flag) {
-    document.querySelector(".links").classList.add("active");
+    document.querySelector("body nav").classList.add("active");
     flag = false;
   } else {
-    document.querySelector(".links").classList.remove("active");
+    document.querySelector("body nav").classList.remove("active");
     flag = true;
   }
 });
