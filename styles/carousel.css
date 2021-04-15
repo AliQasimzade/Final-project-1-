@@ -145,5 +145,8 @@
   margin-left: 91px;
  
 }
+.dot circle.active{
+  opacity: 1;
+}
 
 
