@@ -1,5 +1,7 @@
 @media only screen and (max-width: 860px) {
 	.carousel-wrapper {
+		background: var(--linear-gradient);
+		padding-bottom: 20px;
 		width: 100%;
 	}
 	.carousel {
@@ -15,21 +17,20 @@
 	}
 	.slider-container .slider .slider-header {
 		margin-bottom: 10px;
-		
 	}
 	.slider .slider-info {
 		flex-direction: column;
 		height: 80%;
 	}
 	.slider .slider-info .slider-image img {
-		width: 80px;
-		height: 80px;
+		height: 5em;
 		margin-right: 10px;
+		width: 5em;
 	}
 	.slider-container .slider .slider-header p:nth-child(1) {
-		font-size: 20px;
+		font-size: 1.25em;
+		line-height: 1.56rem;
 		margin-bottom: 20px;
-		line-height: 25px;
 		text-align: center;
 	}
 	.slider-container .slider .slider-header .line {
@@ -42,46 +43,55 @@
 		font-size: 14px;
 	}
 	.slider-image .profile .name {
-		font-size: 17px;
-		line-height: 30px;
+		font-size: 1em;
+		line-height: 1.87rem;
 	}
 	.slider .slider-article {
-		width: 90%;
-		font-size: 14px;
-		line-height: 25px;
+		font-size: 0.87em;
+		line-height: 1.56rem;
 		text-align: center;
+		width: 90%;
 	}
-	.dots-arrows{
+	.dots-arrows {
 		margin-top: 10px;
 	}
 	.dots-arrows .dots-container {
 		display: none;
 	}
+	.dots-arrows .arrow-right,
+	.arrow-left {
+		margin-left: 10px;
+	}
+	.dots-arrows .arrow-left-path,
+	.arrow-right-path {
+		fill: var(--text-color);
+	}
 }
 
 @media only screen and (max-width: 1172px) {
-	.carousel-wrapper{
-		background-image: none;
+	.carousel-wrapper {
+		height: 46vh;
 	}
 	.slider .slider-header p:nth-child(1) {
-		font-size: 25px;
+		font-size: 1.5em;
 	}
 	.slider-info {
-		padding: 0;
 		justify-content: space-around;
+		padding: 0;
+		width: 100%;
 	}
 	.slider-info .slider-image img {
-		width: 100px;
-		height: 100px;
+		height: 6em;
+		width: 6em;
 	}
 	.profile .name {
-		font-size: 19px;
-		line-height: 35px;
+		font-size: 1.125em;
+		line-height: 2.18rem;
 	}
 	.profile .job {
-		font-size: 16px;
+		font-size: 1em;
 	}
 	.slider-article {
-		font-size: 15px;
+		font-size: 0.87em;
 	}
 }
