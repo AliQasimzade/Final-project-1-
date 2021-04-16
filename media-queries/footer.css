@@ -1,13 +1,13 @@
 @media only screen and (max-width: 670px) {
 	.footer-container .footer .footer-wrapper {
-		padding-bottom: 30px;
 		height: fit-content;
+		padding-bottom: 30px;
 	}
 	.footer-container .footer .footer-wrapper ul {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(4, 1fr);
-		row-gap: 10px;
 		place-items: center;
+		row-gap: 10px;
 	}
 	.footer-container .footer .footer-wrapper ul li .about {
 		text-align: center;

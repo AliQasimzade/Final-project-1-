@@ -7,9 +7,6 @@
 }
 .carousel-wrapper {
   align-items: center;
-  background-image: url("../images/Group\ \(1\).png");
-  background-position: 1% 80%;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -18,8 +15,8 @@
 .carousel {
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
   border-radius: 24px;
-  height: 425px;
   overflow: hidden;
+  height: 100%;
   width: 100%;
 }
 .slider-container {
@@ -29,25 +26,15 @@
   width: 400%;
 }
 .slider-container .slider {
+  background-image: url("../images/element\ \(3\).png");
+  background-position: 101% 3%;
+  background-repeat: no-repeat;
   height: 100%;
-  padding-top: 64px;
   width: 50%;
- 
-}
-.slider:nth-child(2){
-  background-color: blue;
-}
-.slider:nth-child(3){
-  background-color: red;
-}
-.slider:nth-child(4){
-  background-color: yellow;
+  padding: 64px 0;
 }
 .slider:first-child {
   align-items: center;
-  background-image: url("../images/Group.png");
-  background-position: 104% 4%;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,29 +44,26 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
- 
 }
 .slider:first-child .slider-header p {
   color: var(--text-color);
   font-family: Mulish;
-  font-size: 36px;
+  font-size: 2.25em;
   font-style: normal;
   font-weight: bold;
-  line-height: 48px;
+  line-height: 3rem;
   margin-bottom: 25px;
 }
 .slider-header .line {
   background-color: var(--text-color);
   border-radius: 6px;
-  height: 2px;
-  width: 56px;
 }
 
 .slider-info {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 80px 0 80px;
+  width: 80%;
 }
 .slider-image {
   align-items: center;
@@ -104,14 +88,14 @@
 .slider-image .job {
   color: rgba(255, 255, 255, 0.85);
   font-family: Mulish;
-  font-size: 18px;
+  font-size: 1.125em;
   font-style: normal;
   font-weight: normal;
 }
 .slider-article {
   color: rgba(255, 255, 255, 0.9);
   font-family: Mulish;
-  font-size: 19px;
+  font-size: 1.2em;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
@@ -123,30 +107,25 @@
   justify-content: center;
   margin-top: 42px;
 }
-.dots-arrows svg{
+.dots-arrows svg {
   cursor: pointer;
 }
-.dots-arrows .dot:not(:nth-child(1)){
+.dots-arrows .dot:not(:nth-child(1)) {
   margin-left: 18px;
 }
 
 .dots-arrows .arrow-left {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
   transform: rotate(180deg);
-  
 }
-.dots-arrows .dots-container{
+.dots-arrows .dots-container {
   margin-left: 91px;
 }
-
 
 .dots-arrows .arrow-right {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-left: 91px;
- 
 }
-.dot circle.active{
+.dot circle.active {
   opacity: 1;
 }
-
-

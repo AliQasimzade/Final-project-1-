@@ -3,21 +3,21 @@
 		margin-bottom: 100px;
 	}
 	.banner .health-info .health-heading {
-		font-size: 22px;
-		line-height: 30px;
+		font-size: 1.5em;
+		line-height: 1.87rem;
 	}
 	.banner .health-info .health-article {
-		font-size: 15px;
+		font-size: 1em;
 		margin-bottom: 30px;
 	}
 
 	.banner .health-info {
-		width: 100%;
+		align-items: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
 		text-align: center;
+		width: 100%;
 	}
 	.banner .health-image {
 		display: none;
@@ -25,63 +25,60 @@
 }
 @media only screen and (max-width: 1172px) {
 	.navigation nav {
-		position: absolute;
-		height: 100vh;
+		background-color: var(--primary-color);
 		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		justify-content: center;
 		left: 0;
 		overflow: hidden;
-		flex-direction: column;
-		justify-content: center;
+		position: absolute;
 		top: 60px;
-		width: 0;
-		background-color: #f8f9fa;
 		transition: all 0.4s ease-in-out;
+		width: 0;
 	}
 	.navigation nav a {
 		display: block;
+		color: var(--text-color);
+		opacity: 1;
 	}
 	.navigation .hamburger-button {
 		display: block;
-		font-size: 22px;
 	}
 
 	.navigation nav.active {
 		width: 100%;
 	}
 	.health-info .health-heading {
+		line-height: 2rem;
 		margin-bottom: 10px;
-		line-height: 30px;
 	}
 	.health-info .health-article {
+		font-size: 1em;
 		margin-bottom: 10px;
 	}
 	.health-info button {
-		width: 160px;
-		height: 50px;
-		font-size: 15px;
+		font-size: 0.93em;
+		padding: 0.8em 2.2em;
 	}
-	.banner-wrapper .banner .health-image img {
-		width: 330px;
-	}
+
 	.banner-wrapper {
 		background-image: none;
 	}
 }
 @media only screen and (max-width: 1500px) {
 	header .navigation img {
-		width: 130px;
+		width: 8.2em;
 	}
 	.navigation nav a {
-		font-size: 16px;
+		font-size: 1em;
 	}
-	.banner .health-image img {
-		width: 390px;
-	}
+
 	.health-info .health-heading {
-		font-size: 30px;
+		font-size: 2.2em;
 		margin-bottom: 10px;
 	}
 	.health-info .health-article {
-		font-size: 16px;
+		font-size: 1.06em;
 	}
 }

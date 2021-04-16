@@ -1,12 +1,15 @@
 @media only screen and (max-width: 500px) {
 	.service-card .service-card-wrapper .service-card-head {
-		font-size: 20px;
+		font-size: 1.25em;
 	}
 	.service-card .service-card-wrapper p:last-child {
-		font-size: 14px;
+		font-size: 0.875em;
 	}
 }
 @media only screen and (max-width: 840px) {
+	.our-services-wrapper .services-cards {
+		width: 80%;
+	}
 	.our-services-wrapper .service-card {
 		width: 100%;
 	}
@@ -21,33 +24,30 @@
 		grid-template-rows: repeat(6, 1fr);
 	}
 	.our-services-heading {
-		font-size: 24px;
+		font-size: 1.6em;
 	}
 	.our-services-info {
-		font-size: 15px;
+		font-size: 0.93em;
 	}
 	.service-card {
 		width: 100%;
 	}
 	.service-card img {
-		width: 50px;
+		width: 3em;
 	}
 }
 
 @media only screen and (max-width: 1172px) {
 	.services-cards {
-		width: 80%;
 		place-items: center;
 	}
 	.our-services-wrapper .services-cards {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, 1fr);
-		column-gap: 34px;
-		row-gap: 37px;
+		row-gap: 2.5em;
 	}
 	.our-services-wrapper button {
-		width: 160px;
-		height: 50px;
-		font-size: 15px;
+		font-size: 0.93em;
+		padding: 0.8em 2.2em;
 	}
 }

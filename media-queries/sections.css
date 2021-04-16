@@ -1,8 +1,8 @@
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 830px) {
 	main section:nth-child(1) .section-1 {
-		width: 100%;
 		align-items: center;
 		text-align: center;
+		width: 100%;
 	}
 	main section:nth-child(1) img {
 		display: none;
@@ -12,84 +12,73 @@
 	}
 
 	main section:nth-child(3) .section-2 {
-		width: 100%;
+		align-items: center;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		text-align: center;
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 1172px) {
 	main section:nth-child(1) {
 		margin-bottom: 100px;
 	}
-	main section:nth-child(1) img {
-		width: 390px;
-	}
+
 	section:nth-child(1) .section-1 p:nth-child(1) {
-		font-size: 25px;
+		font-size: 1.43em;
+		line-height: 2rem;
+	}
+	section:nth-child(1) .section-1 .line {
+		margin-bottom: 15px;
 	}
 	section:nth-child(1) .section-1 .section-1-article {
-		font-size: 15px;
+		font-size: 0.93em;
 	}
 	.section-1 button {
-		width: 160px;
-		height: 50px;
-		font-size: 15px;
+		padding: 0.8em 2.2em;
+		font-size: 0.93em;
 	}
 	main section:nth-child(2) {
 		display: none;
 	}
-	main section:nth-child(3) .section-2-image {
-		width: 390px;
-	}
+
 	main section:nth-child(3) .section-2 p:nth-child(1) {
-		font-size: 25px;
+		font-size: 1.56em;
 	}
 	main section:nth-child(3) .section-2 .section-2-article {
-		font-size: 15px;
+		font-size: 0.93em;
 	}
 	main section:nth-child(3) .section-2 button {
-		width: 160px;
-		height: 50px;
-		font-size: 15px;
+		padding: 0.8em 2.2em;
+		font-size: 0.93em;
 	}
 	.section-2 .section-2-button img {
-		font-size: 14px;
+		width: 0.5em;
 	}
 }
-
 @media only screen and (max-width: 1500px) {
-	section:nth-child(1) img {
-		width: 460px;
-	}
 	.section-1 p:nth-child(1) {
-		font-size: 30px;
+		font-size: 1.87em;
+		line-height: 2.5rem;
 		margin-bottom: 10px;
-		line-height: 40px;
 	}
 	main section:nth-child(1) .section-1 .arrow {
 		margin-bottom: 10px;
 	}
 	.section-1 .section-1-article {
+		font-size: 1em;
 		margin-bottom: 15px;
-		font-size: 16px;
-		line-height: 26px;
-	}
-	section:nth-child(3) .section-2-image {
-		width: 460px;
 	}
 	.section-2 p:nth-child(1) {
-		font-size: 30px;
+		font-size: 1.87em;
+		line-height: 2.5rem;
 		margin-bottom: 10px;
-		line-height: 40px;
 	}
 	main section:nth-child(3) .section-2 .line {
 		margin-bottom: 10px;
 	}
 	.section-2 .section-2-article {
+		font-size: 1em;
 		margin-bottom: 15px;
-		font-size: 16px;
-		line-height: 26px;
 	}
 }

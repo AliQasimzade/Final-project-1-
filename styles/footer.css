@@ -1,111 +1,111 @@
 footer {
-	width: 100%;
-	box-sizing: border-box;
 	background-image: url('../images/element\ \(4\).png');
-	background-repeat: no-repeat;
 	background-position: 90% 15%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 .footer-container {
-	width: 100%;
-	margin-top: 129px;
 	background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+	margin-top: 129px;
+	width: 100%;
 }
 .footer {
-	display: flex;
 	align-items: center;
+	background-image: url('../images/element\ \(3\).png');
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	display: flex;
 	justify-content: center;
 	width: 100%;
-	background-image: url('../images/element\ \(3\).png');
-	background-repeat: no-repeat;
-	background-position: bottom left;
 }
 
 .footer-wrapper {
-	width: 80%;
 	padding-bottom: 100px;
+	width: 80%;
 }
 .footer-wrapper ul {
-	width: 100%;
-	display: flex;
 	align-items: center;
+	display: flex;
 	justify-content: space-between;
 	padding-top: 80px;
+	width: 100%;
 }
 .footer-wrapper ul li {
-	display: flex;
 	align-items: flex-start;
-	justify-content: center;
+	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 ul li:nth-child(1) .footer-logo {
-	display: flex;
 	align-items: center;
+	display: flex;
 	justify-content: center;
 	margin-bottom: 22px;
 }
 ul li:nth-child(1) .footer-logo .circle {
-	width: 41px;
-	height: 41px;
-	border-radius: 50%;
-	background: var(--text-color);
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	margin-right: 12.15px;
+	background: var(--text-color);
+	border-radius: 50%;
+	color: #5b9bf3;
+	display: flex;
 	font-family: Mulish;
+	font-size: 26px;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 26px;
+	height: 41px;
+	justify-content: center;
 	line-height: 33px;
-	color: #5b9bf3;
+	margin-right: 12.15px;
+	width: 41px;
 }
 ul li:nth-child(1) .footer-logo p {
+	color: var(--text-color);
 	font-family: Mulish;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 20px;
 	line-height: 30px;
-	color: var(--text-color);
 }
 
 ul li:nth-child(1) .about {
+	color: var(--text-color);
 	font-family: Mulish;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;
 	line-height: 28px;
-	color: var(--text-color);
 	margin-bottom: 31px;
 }
 
 ul li:nth-child(1) .rights {
+	color: var(--text-color);
 	font-family: Mulish;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 16px;
 	line-height: 28px;
-	color: var(--text-color);
 }
 
 ul li .heading {
+	color: var(--text-color);
 	font-family: Mulish;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 20px;
 	line-height: 60px;
-	color: var(--text-color);
 }
 
 ul li a {
+	color: var(--text-color);
 	font-family: Mulish;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;
 	line-height: 38px;
 	opacity: 0.8;
-	color: var(--text-color);
 }
 ul li a:hover {
 	text-decoration: underline;
