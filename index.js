@@ -1,4 +1,3 @@
-let container = document.querySelector('body');
 let hamburgerButton = document.querySelector('.hamburger-button');
 let arrowLeft = document.querySelector('.arrow-left');
 let arrowLeftPath = document.querySelector('.arrow-left-path');
@@ -19,6 +18,7 @@ let testimonialsHeading = document.querySelector('.cards-wrapper');
 let circle = document.querySelector('.circle');
 let activeCount = 0;
 let slideNumber = dots.length;
+
 
 findDoctor.addEventListener('click', (event) => {
 	event.preventDefault();

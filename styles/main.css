@@ -24,6 +24,13 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-bottom: 80px;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: opacity 1s ease, transform 1s ease;
+}
+.services-header.visible {
+	opacity: 1;
+	transform: translateY(0);
 }
 .our-services-heading {
 	color: var(--black-color);
@@ -31,14 +38,14 @@
 	font-size: 2.25em;
 	font-style: normal;
 	font-weight: 700;
-	margin-bottom: 26px;
 	line-height: 3.5rem;
+	margin-bottom: 26px;
 }
 .line {
 	background: var(--black-color);
 	border-radius: 5px;
-	padding: 1px;
 	margin-bottom: 33px;
+	padding: 1px;
 	width: 3.5em;
 }
 .our-services-info {
@@ -52,13 +59,19 @@
 	width: 75%;
 }
 .services-cards {
-	
 	column-gap: 2.13em;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	row-gap: 2.3em;
 	width: 90%;
+	 opacity: 0;
+  transform: translateY(300px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.services-cards.visible{
+	opacity: 1;
+	transform: translateY(0);
 }
 .service-card {
 	align-items: center;
@@ -109,9 +122,9 @@
 	font-family: 'Mulish', sans-serif;
 	font-size: 1.125em;
 	font-weight: 700;
-	padding: 1em 2.8em;
 	margin-top: 69px;
 	outline: none;
+	padding: 1em 2.8em;
 	transition: all 0.3s ease-in-out;
 }
 .our-services-wrapper button:hover {
