@@ -113,20 +113,14 @@
 }
 
 .card .card-info-container .card-info button:hover img {
-	animation: x-scroll 0.4s linear;
+	animation: x-scroll 0.3s linear forwards;
 }
 @keyframes x-scroll {
 	0% {
 		transform: translateX(0px);
 	}
-	50% {
-		transform: translateX(8px);
-	}
-	75% {
-		transform: translateX(4px);
-	}
 	100% {
-		transform: translateX(0px);
+		transform: translateX(8px);
 	}
 }
 .cards-wrapper .view {
