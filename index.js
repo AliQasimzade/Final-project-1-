@@ -31,7 +31,7 @@ apps.addEventListener('click', (event) => {
 	event.preventDefault();
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	sectionOneHeading.scrollIntoView({ behavior: 'smooth', block: 'center' });
+	sectionOneHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 testimonials.addEventListener('click', (event) => {
