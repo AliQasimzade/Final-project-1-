@@ -9,11 +9,47 @@ let slideEl = document.querySelectorAll('.slider');
 let sliderContainer = document.querySelector('.slider-container');
 let headerEl = document.querySelector('body header');
 let nav = document.querySelector('body nav');
+let findDoctor = document.querySelector('.find-doctor');
+let apps = document.querySelector('.apps');
+let testimonials = document.querySelector('.testimonials');
+let aboutUs = document.querySelector('.about-us');
+let ourServicesHeading = document.querySelector('.our-services');
+let sectionOneHeading = document.querySelector('.section-1-heading');
+let testimonialsHeading = document.querySelector('.cards-wrapper');
+let circle = document.querySelector('.circle');
 let activeCount = 0;
 let slideNumber = dots.length;
 
+findDoctor.addEventListener('click', (event) => {
+	event.preventDefault();
+	hamburgerButton.classList.remove('active');
+	nav.classList.remove('active');
+	ourServicesHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+apps.addEventListener('click', (event) => {
+	event.preventDefault();
+	hamburgerButton.classList.remove('active');
+	nav.classList.remove('active');
+	sectionOneHeading.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+testimonials.addEventListener('click', (event) => {
+	event.preventDefault();
+	hamburgerButton.classList.remove('active');
+	nav.classList.remove('active');
+	testimonialsHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+aboutUs.addEventListener('click', (event) => {
+	event.preventDefault();
+	hamburgerButton.classList.remove('active');
+	nav.classList.remove('active');
+	circle.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
 window.onscroll = function () {
-  myFunction();
+	myFunction();
 };
 
 function myFunction() {
@@ -24,7 +60,7 @@ function myFunction() {
 	}
 }
 
-hamburgerButton.addEventListener("click", () => {
+hamburgerButton.addEventListener('click', () => {
 	hamburgerButton.classList.toggle('active');
 	nav.classList.toggle('active');
 });
