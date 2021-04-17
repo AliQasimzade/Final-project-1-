@@ -58,6 +58,7 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	row-gap: 2.3em;
+	width: 90%;
 }
 .service-card {
 	align-items: center;

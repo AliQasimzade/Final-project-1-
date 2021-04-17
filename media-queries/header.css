@@ -41,6 +41,8 @@
 		color: var(--text-color);
 		display: block;
 		opacity: 1;
+		margin: 0 ;
+		padding: 10px;
 	}
 	.navigation .hamburger-button {
 		display: block;
