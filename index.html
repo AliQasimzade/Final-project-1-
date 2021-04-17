@@ -26,39 +26,15 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="container-wrapper">
-				<header>
+			<header>
 					<div class="navigation">
 						<a href="/">
 							<img src="./images/logo.svg" alt="logo" />
 						</a>
 						<div class="hamburger-button">
-							<svg
-								width="35"
-								height="35"
-								viewBox="0 0 36 22"
-								onclick="this.classList.toggle('active')"
-							>
-								<g transform="matrix(1,0,0,1,-419.5,-274.131)">
-									<g id="arrow_rocket">
-										<path
-											id="top"
-											d="M420,274.631L450,274.631C450,274.631 459.044,284.599 450,284.599C440.956,284.599 420,284.646 420,284.646L430.014,274.631"
-										/>
-										<g
-											transform="matrix(1,-1.22465e-16,-1.22465e-16,-1,0,569.277)"
-										>
-											<path
-												id="bottom"
-												d="M420,274.631L450,274.631C450,274.631 459.044,284.599 450,284.599C440.956,284.599 420,284.646 420,284.646L430.014,274.631"
-											/>
-										</g>
-										<g transform="matrix(1,0,0,1,0,-0.0234189)">
-											<path id="middle" d="M420,284.646L450,284.646" />
-										</g>
-									</g>
-								</g>
-							</svg>
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
 						</div>
 						<nav>
 							<a href="">Home</a>
@@ -69,6 +45,7 @@
 						</nav>
 					</div>
 				</header>
+			<div class="container-wrapper">
 				<div class="banner-wrapper">
 					<div class="banner">
 						<div class="health-info">
@@ -354,7 +331,9 @@
 								</div>
 							</div>
 							<div class="card">
-								<div class="img"></div>
+								<div class="img">
+									<img src="./images/health-image1.png" alt="" />
+								</div>
 								<div class="card-info-container">
 									<div class="card-info">
 										<p>Natural care for healthy facial skin</p>
@@ -373,7 +352,8 @@
 						<button class="view">View all</button>
 					</div>
 				</div>
-				<footer>
+			</div>
+			<footer>
 					<div class="footer-container">
 						<div class="footer">
 							<div class="footer-wrapper">
@@ -418,7 +398,6 @@
 						</div>
 					</div>
 				</footer>
-			</div>
 		</div>
 	</body>
 	<script src="index.js"></script>

@@ -1,6 +1,8 @@
 @media only screen and (max-width: 550px) {
 	.cards-wrapper .cards-container .card {
 		width: 100%;
+		height: fit-content;
+		padding-bottom: 30px;
 	}
 	.cards-wrapper .article p {
 		font-size: 22px;
@@ -31,7 +33,7 @@
 		flex-direction: column;
 	}
 	.cards-wrapper .cards-container .card button {
-		font-size: 16px;
+		font-size: 1em;
 	}
 	.cards-wrapper .view {
 		font-size: 15px;
@@ -48,7 +50,7 @@
 		font-size: 14px;
 	}
 }
-@media only screen and (max-width: 1212px) {
+@media only screen and (max-width: 1250px) {
 	.cards-container {
 		column-gap: 20px;
 		display: grid;
@@ -58,6 +60,6 @@
 		row-gap: 30px;
 	}
 	.cards-container .card {
-		margin: 0;
+		margin: 10px;
 	}
 }

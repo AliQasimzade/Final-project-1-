@@ -98,7 +98,7 @@
 .card .card-info-container .card-info button {
 	background: none;
 	border: none;
-	color: #4089ed;
+	color: var(--read-button-color);
 	cursor: pointer;
 	font-family: Mulish;
 	font-size: 17px;

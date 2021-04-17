@@ -1,7 +1,6 @@
 @media only screen and (max-width: 860px) {
 	.carousel-wrapper {
 		background: var(--linear-gradient);
-		
 		width: 100%;
 	}
 	.carousel {
@@ -53,7 +52,8 @@
 		width: 90%;
 	}
 	.dots-arrows {
-		margin-top: 10px;
+
+		margin-bottom: 10px;
 	}
 	.dots-arrows .dots-container {
 		display: none;
@@ -61,6 +61,8 @@
 	.dots-arrows .arrow-right,
 	.arrow-left {
 		margin-left: 10px;
+		width: 24px;
+		height: 22px;
 	}
 	.dots-arrows .arrow-left-path,
 	.arrow-right-path {
@@ -69,9 +71,7 @@
 }
 
 @media only screen and (max-width: 1172px) {
-	.carousel-wrapper {
-		height: 46vh;
-	}
+
 	.slider .slider-header p:nth-child(1) {
 		font-size: 1.5em;
 	}

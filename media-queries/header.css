@@ -33,17 +33,36 @@
 		left: 0;
 		overflow: hidden;
 		position: absolute;
-		top: 60px;
-		transition: all 0.4s ease-in-out;
+		top: 80px;
+		transition: all 0.3s ease-in-out;
 		width: 0;
 	}
 	.navigation nav a {
-		display: block;
 		color: var(--text-color);
+		display: block;
 		opacity: 1;
 	}
 	.navigation .hamburger-button {
 		display: block;
+	}
+	.navigation .hamburger-button .line {
+		background: var(--primary-color);
+		border-radius: 5px;
+		height: 5px;
+		margin: 6px;
+		transition: all 0.3s ease-in-out;
+		width: 45px;
+	}
+	.hamburger-button.active .line:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger-button.active .line:nth-child(1) {
+		transform: translateY(13px) rotate(45deg);
+	}
+
+	.hamburger-button.active .line:nth-child(3) {
+		transform: translateY(-9px) rotate(-45deg);
 	}
 
 	.navigation nav.active {

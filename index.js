@@ -8,9 +8,9 @@ let dots = Array.from(document.querySelectorAll('.dot'));
 let slideEl = document.querySelectorAll('.slider');
 let sliderContainer = document.querySelector('.slider-container');
 let headerEl = document.querySelector('body header');
+let nav = document.querySelector('body nav');
 let activeCount = 0;
 let slideNumber = dots.length;
-let flag = true;
 
 window.onscroll = function () {
   myFunction();
@@ -25,13 +25,8 @@ function myFunction() {
 }
 
 hamburgerButton.addEventListener("click", () => {
-  if (flag) {
-    document.querySelector("body nav").classList.add("active");
-    flag = false;
-  } else {
-    document.querySelector("body nav").classList.remove("active");
-    flag = true;
-  }
+	hamburgerButton.classList.toggle('active');
+	nav.classList.toggle('active');
 });
 const prevSlide = () => {
 	if (activeCount == 0) {
