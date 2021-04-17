@@ -4,14 +4,13 @@ const healthImage = document.querySelector('.health-image');
 const servicesHeader = document.querySelector('.services-header');
 const servicesCards = document.querySelector('.services-cards');
 const options = {
-	rootMargin: '40px',
+	rootMargin: '10px',
+	
 };
 function handleIntersection(entries) {
 	entries.map((entry) => {
 		if (entry.isIntersecting) {
 			entry.target.classList.add('visible');
-		} else {
-			entry.target.classList.remove('visible');
 		}
 	});
 }

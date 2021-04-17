@@ -24,14 +24,15 @@ findDoctor.addEventListener('click', (event) => {
 	event.preventDefault();
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	ourServicesHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	ourServicesHeading.scrollIntoView({ behavior: 'smooth', block: "start" });
+	
 });
 
 apps.addEventListener('click', (event) => {
 	event.preventDefault();
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	sectionOneHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	sectionOneHeading.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
 testimonials.addEventListener('click', (event) => {
