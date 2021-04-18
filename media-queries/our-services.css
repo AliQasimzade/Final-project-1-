@@ -1,0 +1,53 @@
+@media only screen and (max-width: 500px) {
+	.service-card .service-card-wrapper .service-card-head {
+		font-size: 1.25em;
+	}
+	.service-card .service-card-wrapper p:last-child {
+		font-size: 0.875em;
+	}
+}
+@media only screen and (max-width: 840px) {
+	.our-services-wrapper .services-cards {
+		width: 80%;
+	}
+	.our-services-wrapper .service-card {
+		width: 100%;
+	}
+	.our-services {
+		background-image: none;
+	}
+	.our-services .our-services-wrapper {
+		background-image: none;
+	}
+	.our-services .our-services-wrapper .services-cards {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+	}
+	.our-services-heading {
+		font-size: 1.6em;
+	}
+	.our-services-info {
+		font-size: 0.93em;
+	}
+	.service-card {
+		width: 100%;
+	}
+	.service-card img {
+		width: 3em;
+	}
+}
+
+@media only screen and (max-width: 1172px) {
+	.services-cards {
+		place-items: center;
+	}
+	.our-services-wrapper .services-cards {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		row-gap: 2.5em;
+	}
+	.our-services-wrapper button {
+		font-size: 0.93em;
+		padding: 0.8em 2.2em;
+	}
+}

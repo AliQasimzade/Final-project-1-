@@ -1,53 +1,84 @@
-@media only screen and (max-width: 500px) {
-	.service-card .service-card-wrapper .service-card-head {
-		font-size: 1.25em;
-	}
-	.service-card .service-card-wrapper p:last-child {
-		font-size: 0.875em;
-	}
-}
-@media only screen and (max-width: 840px) {
-	.our-services-wrapper .services-cards {
-		width: 80%;
-	}
-	.our-services-wrapper .service-card {
+@media only screen and (max-width: 830px) {
+	main section:nth-child(1) .section-1 {
+		align-items: center;
+		text-align: center;
 		width: 100%;
 	}
-	.our-services {
-		background-image: none;
+	main section:nth-child(1) img {
+		display: none;
 	}
-	.our-services .our-services-wrapper {
-		background-image: none;
+	main section:nth-child(3) .section-2-image {
+		display: none;
 	}
-	.our-services .our-services-wrapper .services-cards {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(6, 1fr);
-	}
-	.our-services-heading {
-		font-size: 1.6em;
-	}
-	.our-services-info {
-		font-size: 0.93em;
-	}
-	.service-card {
-		width: 100%;
-	}
-	.service-card img {
-		width: 3em;
-	}
-}
 
+	main section:nth-child(3) .section-2 {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+	}
+}
 @media only screen and (max-width: 1172px) {
-	.services-cards {
-		place-items: center;
+	main section:nth-child(1) {
+		margin-bottom: 100px;
 	}
-	.our-services-wrapper .services-cards {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-		row-gap: 2.5em;
+
+	section:nth-child(1) .section-1 p:nth-child(1) {
+		font-size: 1.43em;
+		line-height: 2rem;
 	}
-	.our-services-wrapper button {
+	section:nth-child(1) .section-1 .line {
+		margin-bottom: 15px;
+	}
+	section:nth-child(1) .section-1 .section-1-article {
 		font-size: 0.93em;
+	}
+	.section-1 button {
 		padding: 0.8em 2.2em;
+		font-size: 0.93em;
+	}
+	main section:nth-child(2) {
+		display: none;
+	}
+
+	main section:nth-child(3) .section-2 p:nth-child(1) {
+		font-size: 1.56em;
+	}
+	main section:nth-child(3) .section-2 .section-2-article {
+		font-size: 0.93em;
+	}
+	main section:nth-child(3) .section-2 button {
+		padding: 0.8em 2.2em;
+		font-size: 0.93em;
+	}
+	.section-2 .section-2-button img {
+		width: 0.5em;
+	}
+}
+@media only screen and (max-width: 1500px) {
+	.section-1 p:nth-child(1) {
+		font-size: 1.87em;
+		line-height: 2.5rem;
+		margin-bottom: 10px;
+	}
+	main section:nth-child(1) .section-1 .arrow {
+		margin-bottom: 10px;
+	}
+	.section-1 .section-1-article {
+		font-size: 1em;
+		margin-bottom: 15px;
+	}
+	.section-2 p:nth-child(1) {
+		font-size: 1.87em;
+		line-height: 2.5rem;
+		margin-bottom: 10px;
+	}
+	main section:nth-child(3) .section-2 .line {
+		margin-bottom: 10px;
+	}
+	.section-2 .section-2-article {
+		font-size: 1em;
+		margin-bottom: 15px;
 	}
 }

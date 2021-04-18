@@ -28,7 +28,7 @@
 .article p {
 	color: var(--black-color);
 	font-family: Mulish;
-	font-size: 36px;
+	font-size: 2.25em;
 	font-style: normal;
 	font-weight: bold;
 	margin-bottom: 26px;
@@ -82,7 +82,7 @@
 	font-size: 21px;
 	font-style: normal;
 	font-weight: bold;
-	line-height: 32px;
+	line-height: 2rem;
 	margin-bottom: 12px;
 }
 .card .card-info-container .card-info p:nth-child(2) {
@@ -91,7 +91,7 @@
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 28px;
+	line-height: 1.75rem;
 	margin-bottom: 25px;
 }
 
@@ -101,10 +101,10 @@
 	color: var(--read-button-color);
 	cursor: pointer;
 	font-family: Mulish;
-	font-size: 17px;
+	font-size: 1.0625em;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 28px;
+	line-height: 1.75rem;
 	outline: none;
 }
 .card .card-info-container .card-info button img {
@@ -131,7 +131,7 @@
 	cursor: pointer;
 	cursor: pointer;
 	font-family: 'Mulish', sans-serif;
-	font-size: 18px;
+	font-size: 1.125em;
 	font-weight: 700;
 	height: 60px;
 	margin-top: 69px;

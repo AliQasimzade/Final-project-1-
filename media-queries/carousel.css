@@ -39,7 +39,7 @@
 		margin-bottom: 15px;
 	}
 	.slider-image .profile .job {
-		font-size: 14px;
+		font-size: 0.875em;
 	}
 	.slider-image .profile .name {
 		font-size: 1em;
@@ -52,7 +52,6 @@
 		width: 90%;
 	}
 	.dots-arrows {
-
 		margin-bottom: 10px;
 	}
 	.dots-arrows .dots-container {
@@ -60,18 +59,15 @@
 	}
 	.dots-arrows .arrow-right,
 	.arrow-left {
+		height: 22px;
 		margin-left: 10px;
 		width: 24px;
-		height: 22px;
-	}
-	.dots-arrows .arrow-left-path,
-	.arrow-right-path {
-		fill: var(--text-color);
+		background-color: var(--text-color);
+
 	}
 }
 
 @media only screen and (max-width: 1172px) {
-
 	.slider .slider-header p:nth-child(1) {
 		font-size: 1.5em;
 	}

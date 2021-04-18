@@ -5,16 +5,16 @@
 		padding-bottom: 30px;
 	}
 	.cards-wrapper .article p {
-		font-size: 22px;
+		font-size: 1.375em;
 		margin-bottom: 18px;
 		text-align: center;
 	}
 	.card .card-info-container .card-info p:nth-child(1) {
-		font-size: 16px;
-		line-height: 20px;
+		font-size: 1em;
+		line-height: 1.25rem;
 	}
 	.card .card-info-container .card-info p:nth-child(2) {
-		font-size: 14px;
+		font-size: 0.875em;
 		margin-bottom: 6px;
 	}
 	.cards-wrapper .cards-container .card .card-info-container .card-info button {
@@ -36,7 +36,7 @@
 		font-size: 1em;
 	}
 	.cards-wrapper .view {
-		font-size: 15px;
+		font-size: 0.9375em;
 		height: 50px;
 		width: 156px;
 	}
@@ -44,10 +44,10 @@
 		margin-bottom: 40px;
 	}
 	.article p {
-		font-size: 30px;
+		font-size: 1.875em;
 	}
 	.cards-wrapper .view {
-		font-size: 14px;
+		font-size: 0.875em;
 	}
 }
 @media only screen and (max-width: 1250px) {
