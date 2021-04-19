@@ -8,7 +8,7 @@ let aboutUs = document.querySelector('.about-us');
 let ourServices = document.querySelector('.our-services');
 let sectionThreeWrapper = document.querySelector('.section-three-wrapper');
 let cardsWrapper = document.querySelector('.cards-wrapper');
-let circle = document.querySelector('.circle');
+let footer = document.querySelector('body footer');
 
 window.addEventListener('scroll', () => {
 	headerAnimation();
@@ -52,5 +52,5 @@ aboutUs.addEventListener('click', (event) => {
 	event.preventDefault();
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	circle.scrollIntoView({ behavior: 'smooth', block: 'center' });
+	footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
