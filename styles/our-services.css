@@ -25,13 +25,14 @@
 	justify-content: center;
 	margin-bottom: 80px;
 	opacity: 0;
-	transform: translateY(100px);
-	transition: opacity 1s ease, transform 1s ease;
+	transform: translateX(100px);
+	transition: all 1s ease-in-out;
 }
 .services-header.visible {
-	opacity: 1;
-	transform: translateY(0);
+   opacity: 1;
+   transform: translateX(0px);
 }
+
 .our-services-heading {
 	color: var(--black-color);
 	font-family: 'Mulish', sans-serif;
@@ -65,14 +66,15 @@
 	grid-template-rows: repeat(2, 1fr);
 	row-gap: 2.3em;
 	width: 90%;
-	 opacity: 0;
-  transform: translateY(200px);
-  transition: opacity 1s ease, transform 1s ease;
+	opacity: 0;
+	transform: translateY(120px);
+	transition: all 1.2s ease-in-out;
 }
-.services-cards.visible{
+.services-cards.visible {
 	opacity: 1;
-	transform: translateY(0);
+	transform: translateY(0px);
 }
+
 .service-card {
 	align-items: center;
 	background: var(--text-color);

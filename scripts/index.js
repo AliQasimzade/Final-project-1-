@@ -6,9 +6,9 @@ let apps = document.querySelector('.apps');
 let testimonials = document.querySelector('.testimonials');
 let aboutUs = document.querySelector('.about-us');
 let ourServices = document.querySelector('.our-services');
-let sectionTwoWrapper = document.querySelector('.section-2-wrapper');
+let sectionThreeWrapper = document.querySelector('.section-three-wrapper');
 let cardsWrapper = document.querySelector('.cards-wrapper');
-let circle = document.querySelector('.circle');
+let footer = document.querySelector('body footer');
 
 window.addEventListener('scroll', () => {
 	headerAnimation();
@@ -38,7 +38,7 @@ apps.addEventListener('click', (event) => {
 	event.preventDefault();
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	sectionTwoWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
+	sectionThreeWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
 testimonials.addEventListener('click', (event) => {
@@ -52,5 +52,5 @@ aboutUs.addEventListener('click', (event) => {
 	event.preventDefault();
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	circle.scrollIntoView({ behavior: 'smooth', block: 'center' });
+	footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
