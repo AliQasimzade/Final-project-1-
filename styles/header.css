@@ -25,6 +25,17 @@ body {
 	justify-content: center;
 	max-width: 1600px;
 }
+@keyframes scrollAnimation {
+	0% {
+		transform: translateY(-150px);
+	}
+	50% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 header {
 	align-items: center;
 	display: flex;
@@ -42,17 +53,7 @@ header.active {
 	box-shadow: 0 0 10px -5px var(--box-shadow);
 	transition: all 0.5s ease-in-out;
 }
-@keyframes scrollAnimation {
-	0% {
-		transform: translateY(-150px);
-	}
-	50% {
-		transform: translateY(-100px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
+
 .navigation {
 	align-items: center;
 	display: flex;
