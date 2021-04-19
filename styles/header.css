@@ -8,6 +8,7 @@
 html,
 body {
 	width: 100%;
+	
 }
 
 .container {
@@ -23,7 +24,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 1601px;
+	max-width: 1600px;
 }
 header {
 	align-items: center;
@@ -152,6 +153,9 @@ nav a:hover {
 }
 .navigation .hamburger-button {
 	display: none;
+}
+.navigation img{
+	padding: 3px;
 }
 .health-image {
 	opacity: 0;

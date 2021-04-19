@@ -34,15 +34,17 @@
 		overflow: hidden;
 		position: absolute;
 		top: 80px;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.4s ease-in-out;
 		width: 0;
+		opacity: 0;
+		
 	}
 	.navigation nav a {
 		color: var(--text-color);
 		display: block;
+		margin: 0;
 		opacity: 1;
-		margin: 0 ;
-		padding: 10px;
+		padding: 15px;
 	}
 	.navigation .hamburger-button {
 		display: block;
@@ -51,16 +53,16 @@
 		background: var(--primary-color);
 		border-radius: 5px;
 		height: 5px;
-		margin: 6px;
-		transition: all 0.3s ease-in-out;
-		width: 45px;
+		margin: 4px;
+		transition: all 0.4s ease-in-out;
+		width: 40px;
 	}
 	.hamburger-button.active .line:nth-child(2) {
 		opacity: 0;
 	}
 
 	.hamburger-button.active .line:nth-child(1) {
-		transform: translateY(13px) rotate(45deg);
+		transform: translateY(9px) rotate(45deg);
 	}
 
 	.hamburger-button.active .line:nth-child(3) {
@@ -69,6 +71,7 @@
 
 	.navigation nav.active {
 		width: 100%;
+		opacity: 1;
 	}
 	.health-info .health-heading {
 		line-height: 2rem;
@@ -94,7 +97,6 @@
 	.navigation nav a {
 		font-size: 1em;
 	}
-
 	.health-info .health-heading {
 		font-size: 2.2em;
 		margin-bottom: 10px;

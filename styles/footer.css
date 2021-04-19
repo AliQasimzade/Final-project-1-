@@ -9,7 +9,6 @@ footer {
 .footer-container {
 	background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
 	margin-top: 129px;
-	
 	width: 100%;
 }
 .footer {
@@ -25,18 +24,17 @@ footer {
 .footer-wrapper {
 	padding-bottom: 100px;
 	width: 80%;
-	
 }
 
 .footer-wrapper ul {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 80px;
-	width: 100%;
 	opacity: 0;
+	padding-top: 80px;
 	transform: translateY(100px);
 	transition: opacity 1s ease, transform 1s ease;
+	width: 100%;
 }
 .footer-wrapper ul.visible {
 	opacity: 1;
@@ -59,62 +57,62 @@ ul li:nth-child(1) .footer-logo .circle {
 	align-items: center;
 	background: var(--text-color);
 	border-radius: 50%;
-	color: #5b9bf3;
+	color: var(--dot-color);
 	display: flex;
 	font-family: Mulish;
-	font-size: 26px;
+	font-size: 1.625em;
 	font-style: normal;
 	font-weight: bold;
 	height: 41px;
 	justify-content: center;
-	line-height: 33px;
+	line-height: 2.0625rem;
 	margin-right: 12.15px;
 	width: 41px;
 }
 ul li:nth-child(1) .footer-logo p {
 	color: var(--text-color);
 	font-family: Mulish;
-	font-size: 20px;
+	font-size: 1.25em;
 	font-style: normal;
 	font-weight: bold;
-	line-height: 30px;
+	line-height: 1.875rem;
 }
 
 ul li:nth-child(1) .about {
 	color: var(--text-color);
 	font-family: Mulish;
-	font-size: 18px;
+	font-size: 1.125em;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 28px;
+	line-height: 1.75rem;
 	margin-bottom: 31px;
 }
 
 ul li:nth-child(1) .rights {
 	color: var(--text-color);
 	font-family: Mulish;
-	font-size: 16px;
+	font-size: 1em;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 28px;
+	line-height: 1.75rem;
 }
 
 ul li .heading {
 	color: var(--text-color);
 	font-family: Mulish;
-	font-size: 20px;
+	font-size: 1.25em;
 	font-style: normal;
 	font-weight: bold;
-	line-height: 60px;
+	line-height: 3.75rem;
 }
 
 ul li a {
 	color: var(--text-color);
 	font-family: Mulish;
-	font-size: 18px;
+	font-size: 1.125em;
 	font-style: normal;
 	font-weight: 300;
-	line-height: 38px;
+	line-height: 2.375rem;
 	opacity: 0.8;
 }
 ul li a:hover {

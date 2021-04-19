@@ -44,16 +44,16 @@
 		background-image: none;
 	}
 	.footer .footer-wrapper ul li:nth-child(1) .about {
-		font-size: 14px;
+		font-size: 0.875em;
 	}
 	.footer .footer-wrapper ul li:nth-child(1) .rights {
-		font-size: 14px;
+		font-size: 0.875em;
 	}
 	.footer .footer-wrapper ul li a {
-		font-size: 14px;
+		font-size: 0.875em;
 	}
 	.footer .footer-wrapper ul li .heading {
-		font-size: 18px;
+		font-size: 1.125em;
 	}
 }
 @media only screen and (max-width: 1400px) {
@@ -61,12 +61,12 @@
 		justify-content: space-between;
 	}
 	.footer-wrapper ul li:nth-child(1) .about {
-		font-size: 16px;
+		font-size: 1em;
 	}
 	.footer-wrapper ul li:nth-child(1) .rights {
-		font-size: 16px;
+		font-size: 1em;
 	}
 	.footer-wrapper ul li a {
-		font-size: 16px;
+		font-size: 1em;
 	}
 }
