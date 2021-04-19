@@ -28,7 +28,7 @@
 		background-color: var(--primary-color);
 		display: flex;
 		flex-direction: column;
-		height: calc(100vh - 80px);
+		height: calc(100vh - 5em);
 		justify-content: center;
 		left: 0;
 		overflow: hidden;

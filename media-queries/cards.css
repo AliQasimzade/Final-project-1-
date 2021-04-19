@@ -4,7 +4,7 @@
 		height: fit-content;
 		padding-bottom: 30px;
 	}
-	.cards-wrapper .article p {
+	.cards-wrapper .cards-article p {
 		font-size: 1.375em;
 		margin-bottom: 18px;
 		text-align: center;
@@ -40,10 +40,10 @@
 		height: 50px;
 		width: 156px;
 	}
-	.cards-wrapper .article {
+	.cards-wrapper .cards-article {
 		margin-bottom: 40px;
 	}
-	.article p {
+	.cards-article p {
 		font-size: 1.875em;
 	}
 	.cards-wrapper .view {

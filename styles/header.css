@@ -8,6 +8,7 @@
 html,
 body {
 	width: 100%;
+	overflow-x: hidden;
 }
 
 .container {
@@ -25,30 +26,19 @@ body {
 	justify-content: center;
 	max-width: 1600px;
 }
-@keyframes scrollAnimation {
-	0% {
-		transform: translateY(-150px);
-	}
-	50% {
-		transform: translateY(-100px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
+
 header {
 	align-items: center;
 	display: flex;
 	height: 5em;
 	justify-content: center;
-	position: fixed;
-	top: 0;
 	transition: all 0.6s ease-in-out;
 	width: 100%;
+	position: fixed;
+	top: 0px;
 	z-index: 9999;
 }
 header.active {
-	animation: scrollAnimation 0.5s linear;
 	background-color: var(--text-color);
 	box-shadow: 0 0 10px -5px var(--box-shadow);
 	transition: all 0.5s ease-in-out;
@@ -108,14 +98,19 @@ nav a:hover {
 	width: 100%;
 }
 .health-info {
-	opacity: 0;
-	transform: translateX(-100px);
-	transition: opacity 1s ease, transform 1s ease;
 	width: 43%;
 }
 .health-info.visible {
-	opacity: 1;
-	transform: translateX(0px);
+	animation: healthInfoAnimation 1s ease-in-out forwards;
+}
+@keyframes healthInfoAnimation{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
 .health-info .health-heading {
@@ -154,15 +149,19 @@ nav a:hover {
 .navigation .hamburger-button {
 	display: none;
 }
-.navigation img{
+.navigation img {
 	padding: 3px;
 }
-.health-image {
-	opacity: 0;
-	transform: translateX(100px);
-	transition: opacity 1s ease, transform 1s ease;
-}
 .health-image.visible {
-	opacity: 1;
-	transform: translateX(0px);
+	animation: healthImageAnimation 1.5s ease-in-out forwards;
+}
+@keyframes healthImageAnimation{
+	0%{
+		opacity: 0;
+		transform: translateX(100px);
+
+	}100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }

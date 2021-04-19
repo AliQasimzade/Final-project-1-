@@ -1,5 +1,5 @@
 @media only screen and (max-width: 830px) {
-	main section:nth-child(1) .section-1 {
+	main section:nth-child(1) .section-one {
 		align-items: center;
 		text-align: center;
 		width: 100%;
@@ -7,11 +7,11 @@
 	main section:nth-child(1) img {
 		display: none;
 	}
-	main section:nth-child(3) .section-2-image {
+	main section:nth-child(3) .section-three-image {
 		display: none;
 	}
 
-	main section:nth-child(3) .section-2 {
+	main section:nth-child(3) .section-three {
 		align-items: center;
 		display: flex;
 		flex-direction: column;
@@ -24,17 +24,17 @@
 		margin-bottom: 100px;
 	}
 
-	section:nth-child(1) .section-1 p:nth-child(1) {
+	section:nth-child(1) .section-one p:nth-child(1) {
 		font-size: 1.43em;
 		line-height: 2rem;
 	}
-	section:nth-child(1) .section-1 .line {
+	section:nth-child(1) .section-one .line {
 		margin-bottom: 15px;
 	}
-	section:nth-child(1) .section-1 .section-1-article {
+	section:nth-child(1) .section-one .section-one-article {
 		font-size: 0.93em;
 	}
-	.section-1 button {
+	.section-one button {
 		padding: 0.8em 2.2em;
 		font-size: 0.93em;
 	}
@@ -42,42 +42,42 @@
 		display: none;
 	}
 
-	main section:nth-child(3) .section-2 p:nth-child(1) {
+	main section:nth-child(3) .section-three p:nth-child(1) {
 		font-size: 1.56em;
 	}
-	main section:nth-child(3) .section-2 .section-2-article {
+	main section:nth-child(3) .section-three .section-three-article {
 		font-size: 0.93em;
 	}
-	main section:nth-child(3) .section-2 button {
+	main section:nth-child(3) .section-three button {
 		padding: 0.8em 2.2em;
 		font-size: 0.93em;
 	}
-	.section-2 .section-2-button img {
+	.section-three .section-three-button img {
 		width: 0.5em;
 	}
 }
 @media only screen and (max-width: 1500px) {
-	.section-1 p:nth-child(1) {
+	.section-one p:nth-child(1) {
 		font-size: 1.87em;
 		line-height: 2.5rem;
 		margin-bottom: 10px;
 	}
-	main section:nth-child(1) .section-1 .arrow {
+	main section:nth-child(1) .section-one .arrow {
 		margin-bottom: 10px;
 	}
-	.section-1 .section-1-article {
+	.section-one .section-one-article {
 		font-size: 1em;
 		margin-bottom: 15px;
 	}
-	.section-2 p:nth-child(1) {
+	.section-three p:nth-child(1) {
 		font-size: 1.87em;
 		line-height: 2.5rem;
 		margin-bottom: 10px;
 	}
-	main section:nth-child(3) .section-2 .line {
+	main section:nth-child(3) .section-three .line {
 		margin-bottom: 10px;
 	}
-	.section-2 .section-2-article {
+	.section-three .section-three-article {
 		font-size: 1em;
 		margin-bottom: 15px;
 	}

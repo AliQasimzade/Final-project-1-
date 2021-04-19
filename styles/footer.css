@@ -23,6 +23,7 @@ footer {
 
 .footer-wrapper {
 	padding-bottom: 100px;
+	padding-top: 80px;
 	width: 80%;
 }
 
@@ -30,15 +31,20 @@ footer {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	opacity: 0;
-	padding-top: 80px;
-	transform: translateY(100px);
-	transition: opacity 1s ease, transform 1s ease;
 	width: 100%;
 }
 .footer-wrapper ul.visible {
-	opacity: 1;
-	transform: translateY(0);
+	animation: footerLinksAnimation 1s ease-in-out forwards;
+}
+@keyframes footerLinksAnimation {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 .footer-wrapper ul li {
 	align-items: flex-start;
