@@ -99,19 +99,15 @@ nav a:hover {
 }
 .health-info {
 	width: 43%;
+	opacity: 0;
+	transform: translateX(-100px);
+	transition: all 1s ease-in-out;
 }
 .health-info.visible {
-	animation: healthInfoAnimation 1s ease-in-out forwards;
+	opacity: 1;
+	transform: translateX(0px);
 }
-@keyframes healthInfoAnimation{
-	0%{
-		opacity: 0;
-		transform: translateX(-100px);
-	}100%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
+
 
 .health-info .health-heading {
 	font-family: 'Mulish', sans-serif;
@@ -152,16 +148,12 @@ nav a:hover {
 .navigation img {
 	padding: 3px;
 }
-.health-image.visible {
-	animation: healthImageAnimation 1.5s ease-in-out forwards;
+.health-image{
+	opacity: 0;
+	transform: translateX(100px);
+	transition: all 1.2s ease-in-out;
 }
-@keyframes healthImageAnimation{
-	0%{
-		opacity: 0;
-		transform: translateX(100px);
-
-	}100%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
+.health-image.visible {
+	opacity: 1;
+	transform: translateX(0px);
 }

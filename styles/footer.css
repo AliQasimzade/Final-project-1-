@@ -32,20 +32,15 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	opacity: 0;
+	transform: translateX(100px);
+	transition: all 1s ease-in-out;
 }
 .footer-wrapper ul.visible {
-	animation: footerLinksAnimation 1s ease-in-out forwards;
+	opacity: 1;
+	transform: translateX(0px);
 }
-@keyframes footerLinksAnimation {
-	0% {
-		opacity: 0;
-		transform: translateY(100px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
+
 .footer-wrapper ul li {
 	align-items: flex-start;
 	display: flex;

@@ -21,35 +21,26 @@ main section:first-child {
 	display: flex;
 	flex-direction: column;
 	width: 40%;
+	opacity: 0;
+	transform: translateX(100px);
+	transition: all 1s ease-in-out;
 }
 .section-one.visible{
-	animation: sectionOneAnimation 1s ease-in-out forwards;
+	opacity: 1;
+	transform: translateX(0px);
 }
-@keyframes sectionOneAnimation{
-	0%{
-		opacity: 0;
-		transform: translateX(100px);
-	}100%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
 
-}
 section:nth-child(1) img{
 	width: 50%;
+	opacity: 0;
+	transform: translateX(-100px);
+	transition: all 1.2s ease-in-out;
 }
 section:nth-child(1) img.visible{
-  animation: firstChildImgAnimation 1.5s ease-in-out forwards;
+  opacity: 1;
+  transform: translateX(0px);
 }
-@keyframes firstChildImgAnimation{
-	0%{
-		opacity: 0;
-		transform: translateX(-100px);
-	}100%{
-		opacity: 1;
-		transform: translateX(0x);
-	}
-}
+
 
 .section-one p:first-child {
 	color: var(--black-color);
@@ -109,36 +100,28 @@ main section:last-child {
 }
 section:last-child img{
 	width: 50%;
+	opacity: 0;
+	transform: translateX(100px);
+	transition: all 1.2s ease-in-out;
 	
 }
 section:last-child img.visible{
-	animation: lastChildImgAnimation 1.5s ease-in-out forwards;
+	opacity: 1;
+	transform: translateX(0px);
 }
-@keyframes lastChildImgAnimation{
-	0%{
-		opacity: 0;
-		transform: translateX(100px);
-	}100%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
+
 .section-three {
 	height: fit-content;
 	width: 35%;
+	opacity: 0;
+	transform: translateX(-100px);
+	transition: all 1s ease-in-out;
 }
 .section-three.visible{
-	animation: sectionTwoAnimation 1s ease-in-out forwards;
+	opacity: 1;
+	transform: translateX(0px);
 }
-@keyframes sectionTwoAnimation{
-	0%{
-		opacity: 0;
-		transform: translateX(-100px);
-	}100%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
+
 
 .section-three p:first-child {
 	color: var(--black-color);

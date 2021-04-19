@@ -24,19 +24,15 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-bottom: 79px;
+	opacity: 0;
+	transform: translateX(100px);
+	transition: all 1s ease-in-out;
 }
 .cards-article.visible{
-	animation: cardsArticleAnimation 1s ease-in-out forwards;
+	opacity: 1;
+	transform: translateX(0px);
 }
-@keyframes cardsArticleAnimation{
-	0%{
-		opacity: 0;
-		transform: translateX(120px);
-	}100%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
+
 .cards-article p {
 	color: var(--black-color);
 	font-family: Mulish;
@@ -50,19 +46,15 @@
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
+	opacity: 0;
+	transform: translateY(120px);
+	transition: all 1.2s ease-in-out;
 }
 .cards-container.visible{
-	animation: cardsContainerAnimation 1.2s ease-in-out forwards;
+	opacity: 1;
+	transform: translateY(0px);
 }
-@keyframes cardsContainerAnimation{
-	0%{
-		opacity: 0;
-		transform: translateY(120px);
-	}100%{
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
+
 .card {
 	background: var(--text-color);
 	border-radius: 20px;
