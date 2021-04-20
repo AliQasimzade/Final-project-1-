@@ -23,7 +23,8 @@
 		display: none;
 	}
 }
-@media only screen and (max-width: 1130px) {
+
+@media only screen and (max-width: 1000px) {
 	.navigation nav {
 		background-color: var(--primary-color);
 		display: flex;
@@ -31,13 +32,12 @@
 		height: calc(100vh - 5em);
 		justify-content: center;
 		left: 0;
+		opacity: 0;
 		overflow: hidden;
 		position: absolute;
 		top: 80px;
 		transition: all 0.4s ease-in-out;
 		width: 0;
-		opacity: 0;
-		
 	}
 	.navigation nav a {
 		color: var(--text-color);
@@ -70,8 +70,8 @@
 	}
 
 	.navigation nav.active {
-		width: 100%;
 		opacity: 1;
+		width: 100%;
 	}
 	.health-info .health-heading {
 		line-height: 2rem;
@@ -85,7 +85,8 @@
 		font-size: 0.93em;
 		padding: 0.8em 2.2em;
 	}
-
+}
+@media only screen and (max-width: 1130px) {
 	.banner-wrapper {
 		background-image: none;
 	}
