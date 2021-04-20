@@ -2,11 +2,13 @@ footer {
 	background-image: url('../images/element\ \(4\).png');
 	background-position: 90% 15%;
 	background-repeat: no-repeat;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 }
 
 .footer-container {
+	background: -o-linear-gradient(266.59deg, #67c3f3 -8.57%, #5a98f2 82.96%);
 	background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
 	margin-top: 129px;
 	width: 100%;
@@ -28,31 +30,58 @@ footer {
 
 .footer-wrapper ul {
 	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	opacity: 0;
+	-webkit-transform: translateX(100px);
+	-ms-transform: translateX(100px);
 	transform: translateX(100px);
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 	width: 95%;
 }
 .footer-wrapper ul.visible {
 	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
 	transform: translateX(0px);
 }
 
 .footer-wrapper ul li {
 	align-items: flex-start;
+	-webkit-box-align: start;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: start;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
-ul li:first-child{
+ul li:first-child {
 	width: 28.6%;
 }
 
 ul li:nth-child(1) .footer-logo {
 	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin-bottom: 17px;
 }
@@ -60,8 +89,14 @@ ul li:nth-child(1) .footer-logo .circle {
 	align-items: center;
 	background: var(--text-color);
 	border-radius: 50%;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
 	color: var(--dot-color);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
 	font-family: Mulish;
 	font-size: 1.625em;
 	font-style: normal;
@@ -89,7 +124,6 @@ ul li:nth-child(1) .about {
 	font-weight: 300;
 	line-height: 1.75rem;
 	margin-bottom: 31px;
-	
 }
 
 ul li:nth-child(1) .rights {

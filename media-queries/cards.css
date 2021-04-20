@@ -1,5 +1,7 @@
 @media only screen and (max-width: 500px) {
 	.cards-wrapper .cards-container .card {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
 		height: fit-content;
 		padding-bottom: 30px;
 		width: 100%;
@@ -28,7 +30,12 @@
 		background-image: none;
 	}
 	.cards-wrapper .cards-container {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: vertical;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 	.cards-wrapper .cards-container .card button {
@@ -51,11 +58,30 @@
 }
 @media only screen and (max-width: 1250px) {
 	.cards-container {
+		display: -ms-grid;
 		display: grid;
+		-ms-grid-columns: (350px) [2];
+		-ms-grid-rows: 1fr 30px 1fr;
 		grid-template-columns: repeat(2, 350px);
 		grid-template-rows: repeat(2, 1fr);
 		place-items: center;
 		row-gap: 30px;
+	}
+	.cards-container > *:nth-child(1) {
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;
+	}
+	.cards-container > *:nth-child(2) {
+		-ms-grid-column: 2;
+		-ms-grid-row: 1;
+	}
+	.cards-container > *:nth-child(3) {
+		-ms-grid-column: 1;
+		-ms-grid-row: 3;
+	}
+	.cards-container > *:nth-child(4) {
+		-ms-grid-column: 2;
+		-ms-grid-row: 3;
 	}
 	.cards-container .card {
 		margin: 10px;

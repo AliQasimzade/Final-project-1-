@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .cards {
 	background-image: url('../images/element\ \(2\).png');
 	background-position: right;
@@ -11,7 +18,14 @@
 	background-image: url('../images/element\ \(1\).png');
 	background-position: 3% 20%;
 	background-repeat: no-repeat;
+	-webkit-box-align: center;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	margin: 0 auto;
 	max-width: 1300px;
@@ -19,16 +33,31 @@
 }
 .cards-article {
 	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin-bottom: 79px;
 	opacity: 0;
+	-webkit-transform: translateX(100px);
+	-ms-transform: translateX(100px);
 	transform: translateX(100px);
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 .cards-article.visible {
 	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
 	transform: translateX(0px);
 }
 
@@ -42,31 +71,51 @@
 }
 
 .cards-container {
+	-webkit-box-pack: space-evenly;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: space-evenly;
 	justify-content: space-evenly;
 	opacity: 0;
+	-webkit-transform: translateY(120px);
+	-ms-transform: translateY(120px);
 	transform: translateY(120px);
+	-webkit-transition: all 1.2s ease-in-out;
+	-o-transition: all 1.2s ease-in-out;
 	transition: all 1.2s ease-in-out;
 	width: 100%;
 }
 .cards-container.visible {
 	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
 	transform: translateY(0px);
 }
 
 .card {
 	background: var(--text-color);
 	border-radius: 20px;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	-webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 	box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	margin: 5px;
 	overflow: hidden;
 	padding-bottom: 20px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	width: 350px;
 }
 .card:hover {
+	-webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+		0 10px 10px rgba(0, 0, 0, 0.22);
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .card .img {
@@ -75,18 +124,30 @@
 }
 .card .img img {
 	height: 100%;
+	-o-object-fit: cover;
 	object-fit: cover;
 	width: 100%;
 }
 .card .card-info-container {
+	-webkit-box-pack: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: center;
 	height: 50%;
 	justify-content: center;
 	width: 100%;
 }
 .card-info-container .card-info {
 	align-items: flex-start;
+	-webkit-box-align: start;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: start;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	width: 80%;
 }
@@ -123,20 +184,17 @@
 }
 .card .card-info-container .card-info button img {
 	margin-left: 8px;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
 
 .card .card-info-container .card-info button:hover img {
-	animation: x-scroll 0.3s linear forwards;
+	-webkit-transform: translateX(8px);
+	-ms-transform: translateX(8px);
+	transform: translateX(8px);
 }
-@keyframes x-scroll {
-	0% {
-		transform: translateX(0px);
-	}
-	100% {
-		transform: translateX(8px);
-	}
-}
+
 .cards-wrapper .view {
 	background-color: var(--text-color);
 	border: 1px solid var(--primary-color);
@@ -150,6 +208,8 @@
 	height: 60px;
 	margin-top: 69px;
 	outline: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	width: 200px;
 }

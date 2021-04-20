@@ -5,37 +5,61 @@ main {
 
 main section:first-child {
 	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin: 0 auto;
-    max-width: 1300px;
+	max-width: 1300px;
 	padding: 0 40px;
 }
 .section-one {
 	align-items: flex-start;
+	-webkit-box-align: start;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: start;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	opacity: 0;
+	-webkit-transform: translateX(100px);
+	-ms-transform: translateX(100px);
 	transform: translateX(100px);
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 	width: 40%;
 }
-.section-one.visible{
+.section-one.visible {
 	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
 	transform: translateX(0px);
 }
 
-section:nth-child(1) img{
+section:nth-child(1) img {
 	opacity: 0;
+	-webkit-transform: translateX(-100px);
+	-ms-transform: translateX(-100px);
 	transform: translateX(-100px);
+	-webkit-transition: all 1.2s ease-in-out;
+	-o-transition: all 1.2s ease-in-out;
 	transition: all 1.2s ease-in-out;
 	width: 50%;
 }
-section:nth-child(1) img.visible{
-  opacity: 1;
-  transform: translateX(0px);
+section:nth-child(1) img.visible {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
 }
-
 
 .section-one p:first-child {
 	color: var(--black-color);
@@ -71,6 +95,8 @@ section:first-child .section-one .line {
 	font-weight: 700;
 	outline: none;
 	padding: 1em 2.8em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -88,37 +114,54 @@ main section:nth-child(2) {
 }
 main section:last-child {
 	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1300px;
 	padding: 0 40px;
-	
 }
-section:last-child .section-three-image{
+section:last-child .section-three-image {
 	opacity: 0;
+	-webkit-transform: translateX(100px);
+	-ms-transform: translateX(100px);
 	transform: translateX(100px);
+	-webkit-transition: all 1.2s ease-in-out;
+	-o-transition: all 1.2s ease-in-out;
 	transition: all 1.2s ease-in-out;
 	width: 50%;
-	
 }
-section:last-child .section-three-image.visible{
+section:last-child .section-three-image.visible {
 	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
 	transform: translateX(0px);
 }
 
 .section-three {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 	opacity: 0;
+	-webkit-transform: translateX(-100px);
+	-ms-transform: translateX(-100px);
 	transform: translateX(-100px);
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 	width: 35%;
 }
-.section-three.visible{
+.section-three.visible {
 	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
 	transform: translateX(0px);
 }
-
 
 .section-three p:first-child {
 	color: var(--black-color);
@@ -145,17 +188,24 @@ section:last-child .section-three-image.visible{
 	background-color: var(--text-color);
 	border: 1px solid var(--primary-color);
 	border-radius: 55px;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
 	color: var(--primary-color);
 	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
 	font-family: 'Mulish', sans-serif;
 	font-size: 1.125em;
 	font-weight: 700;
 	justify-content: center;
 	outline: none;
 	padding: 1em 2.8em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-
 }
 .section-three .line {
 	background-color: var(--black-color);

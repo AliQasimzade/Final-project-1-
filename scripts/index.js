@@ -8,7 +8,7 @@ let aboutUs = document.querySelector('.about-us');
 let ourServices = document.querySelector('.our-services');
 let sectionThreeWrapper = document.querySelector('.section-three-wrapper');
 let cardsWrapper = document.querySelector('.cards-wrapper');
-let footer = document.querySelector('.view');
+let footer = document.querySelector('footer');
 
 window.addEventListener('scroll', () => {
 	headerAnimation();
@@ -29,7 +29,8 @@ hamburgerButton.addEventListener('click', () => {
 
 findDoctor.addEventListener('click', (event) => {
 	event.preventDefault();
-	ourServices.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	window.scroll({top:2500, behavior:'smooth'})
+	console.log(ourServices.scroll);
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
 });
@@ -50,7 +51,7 @@ testimonials.addEventListener('click', (event) => {
 
 aboutUs.addEventListener('click', (event) => {
 	event.preventDefault();
-	footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	footer.scrollIntoView({ behavior: 'smooth', block: 'center' });
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
 });
