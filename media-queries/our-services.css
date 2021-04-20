@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width: 840px) {
 	.our-services-wrapper .services-cards {
-		width: 80%;
+		width: 100%;
 	}
 	.our-services-wrapper .service-card {
 		width: 100%;
