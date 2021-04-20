@@ -38,7 +38,7 @@ header.active {
 	height: 100%;
 	justify-content: space-between;
 	margin: 0 auto;
-	max-width: 1350px;
+	max-width: 1300px;
 	padding: 0 30px;
 }
 nav {
@@ -79,7 +79,7 @@ nav a:hover {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	max-width: 1350px;
+	max-width: 1300px;
 	padding: 0 30px;
 }
 .banner .health-image {
