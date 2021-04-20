@@ -29,8 +29,7 @@ hamburgerButton.addEventListener('click', () => {
 
 findDoctor.addEventListener('click', (event) => {
 	event.preventDefault();
-	window.scroll({top:2500, behavior:'smooth'})
-	console.log(ourServices.scroll);
+	ourServices.scrollIntoView({behavior:'smooth', block:'start'})
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
 });
