@@ -1,10 +1,7 @@
 .cards {
-	align-items: center;
 	background-image: url('../images/element\ \(2\).png');
 	background-position: right;
 	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
 	margin-top: 216px;
 	width: 100%;
 }
@@ -12,11 +9,13 @@
 .cards-wrapper {
 	align-items: center;
 	background-image: url('../images/element\ \(1\).png');
-	background-position: 1% 20%;
+	background-position: 3% 20%;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	margin: 0 auto;
+	max-width: 1350px;
+	padding: 0 30px;
 }
 .cards-article {
 	align-items: center;
@@ -28,7 +27,7 @@
 	transform: translateX(100px);
 	transition: all 1s ease-in-out;
 }
-.cards-article.visible{
+.cards-article.visible {
 	opacity: 1;
 	transform: translateX(0px);
 }
@@ -45,12 +44,12 @@
 .cards-container {
 	display: flex;
 	justify-content: space-evenly;
-	width: 100%;
 	opacity: 0;
 	transform: translateY(120px);
 	transition: all 1.2s ease-in-out;
+	width: 100%;
 }
-.cards-container.visible{
+.cards-container.visible {
 	opacity: 1;
 	transform: translateY(0px);
 }
@@ -61,9 +60,9 @@
 	box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 20px;
 	margin: 5px;
 	overflow: hidden;
+	padding-bottom: 20px;
 	transition: all 0.3s ease-in-out;
 	width: 350px;
 }
@@ -71,7 +70,6 @@
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .card .img {
-	height: 50%;
 	margin-bottom: 24px;
 	width: 100%;
 }

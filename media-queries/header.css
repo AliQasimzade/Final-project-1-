@@ -23,7 +23,7 @@
 		display: none;
 	}
 }
-@media only screen and (max-width: 1172px) {
+@media only screen and (max-width: 1130px) {
 	.navigation nav {
 		background-color: var(--primary-color);
 		display: flex;

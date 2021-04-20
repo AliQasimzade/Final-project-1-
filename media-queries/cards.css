@@ -1,11 +1,10 @@
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
 	.cards-wrapper .cards-container .card {
-		width: 100%;
 		height: fit-content;
 		padding-bottom: 30px;
+		width: 100%;
 	}
 	.cards-wrapper .cards-article p {
-		font-size: 1.375em;
 		margin-bottom: 18px;
 		text-align: center;
 	}
@@ -52,7 +51,6 @@
 }
 @media only screen and (max-width: 1250px) {
 	.cards-container {
-		column-gap: 20px;
 		display: grid;
 		grid-template-columns: repeat(2, 350px);
 		grid-template-rows: repeat(2, 1fr);

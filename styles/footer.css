@@ -12,29 +12,28 @@ footer {
 	width: 100%;
 }
 .footer {
-	align-items: center;
 	background-image: url('../images/element\ \(3\).png');
 	background-position: bottom left;
 	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
 	width: 100%;
 }
 
 .footer-wrapper {
+	margin: 0 auto;
+	max-width: 1350px;
+	padding: 0 30px;
 	padding-bottom: 100px;
 	padding-top: 80px;
-	width: 80%;
 }
 
 .footer-wrapper ul {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
 	opacity: 0;
 	transform: translateX(100px);
 	transition: all 1s ease-in-out;
+	width: 95%;
 }
 .footer-wrapper ul.visible {
 	opacity: 1;
@@ -47,12 +46,15 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 }
+ul li:first-child{
+	width: 28.6%;
+}
 
 ul li:nth-child(1) .footer-logo {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 22px;
+	margin-bottom: 17px;
 }
 ul li:nth-child(1) .footer-logo .circle {
 	align-items: center;
@@ -87,6 +89,7 @@ ul li:nth-child(1) .about {
 	font-weight: 300;
 	line-height: 1.75rem;
 	margin-bottom: 31px;
+	
 }
 
 ul li:nth-child(1) .rights {

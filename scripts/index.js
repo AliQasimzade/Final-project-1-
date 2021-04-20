@@ -29,28 +29,28 @@ hamburgerButton.addEventListener('click', () => {
 
 findDoctor.addEventListener('click', (event) => {
 	event.preventDefault();
+	ourServices.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	ourServices.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 apps.addEventListener('click', (event) => {
 	event.preventDefault();
+	sectionThreeWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	sectionThreeWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
 testimonials.addEventListener('click', (event) => {
 	event.preventDefault();
+	cardsWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	cardsWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 aboutUs.addEventListener('click', (event) => {
 	event.preventDefault();
+	footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	hamburgerButton.classList.remove('active');
 	nav.classList.remove('active');
-	footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });

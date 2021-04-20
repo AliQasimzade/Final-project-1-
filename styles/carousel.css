@@ -1,16 +1,20 @@
 .carousel-container {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	margin-top: 251px;
 	width: 100%;
 }
 .carousel-wrapper {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
+	max-width: 1350px;
+	padding: 0 30px;
 	position: relative;
-	width: 80%;
+}
+.carousel-wrapper .carousel-background-image{
+	position: absolute;
+	top: 55%;
+	left: -38px;
+	z-index: -2;
 }
 .carousel {
 	background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
@@ -19,6 +23,7 @@
 	overflow: hidden;
 	width: 100%;
 }
+
 .slider-container {
 	display: flex;
 	height: 100%;
