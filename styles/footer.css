@@ -38,20 +38,29 @@ footer {
 	-ms-flex-align: center;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	opacity: 0;
-	-webkit-transform: translateY(100px);
-	-ms-transform: translateY(100px);
-	transform: translateY(100px);
-	-webkit-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+	animation: footerWrapperUlAnimation 0.1s ease-in-out forwards;
 	width: 95%;
+	opacity: 0;
+}
+@keyframes footerWrapperUlAnimation{
+	0%{
+		
+		transform: translateX(0px);
+	}100%{
+		
+		transform: translateX(130px);
+	}
 }
 .footer-wrapper ul.visible {
-	opacity: 1;
-	-webkit-transform: translateY(0px);
-	-ms-transform: translateY(0px);
-	transform: translateY(0px);
+	animation: visibleFooterWrapperUlAnimation 1s ease-in-out forwards;
+}
+@keyframes visibleFooterWrapperUlAnimation{
+	0%{
+		transform: translateX(130px);
+	}100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
 .footer-wrapper ul li {

@@ -41,10 +41,9 @@
 	.cards-wrapper .cards-container .card button {
 		font-size: 1em;
 	}
-	.cards-wrapper .view {
+	.cards-wrapper .view-button{
 		font-size: 0.9375em;
-		height: 50px;
-		width: 156px;
+		padding: 0.8em 2.2em;
 	}
 	.cards-wrapper .cards-article {
 		margin-bottom: 40px;
