@@ -94,9 +94,9 @@
 	grid-template-rows: repeat(2, 1fr);
 	opacity: 0;
 	row-gap: 2.3em;
-	-webkit-transform: translateY(120px);
-	-ms-transform: translateY(120px);
-	transform: translateY(120px);
+	-webkit-transform: translateX(120px);
+	-ms-transform: translateX(120px);
+	transform: translateX(120px);
 	-webkit-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
@@ -128,9 +128,9 @@
 }
 .services-cards.visible {
 	opacity: 1;
-	-webkit-transform: translateY(0px);
-	-ms-transform: translateY(0px);
-	transform: translateY(0px);
+	-webkit-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
 }
 
 .service-card {
