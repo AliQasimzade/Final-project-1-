@@ -189,9 +189,9 @@ nav a:hover {
 	-webkit-transform: translateX(100px);
 	-ms-transform: translateX(100px);
 	transform: translateX(100px);
-	-webkit-transition: all 1.2s ease-in-out;
-	-o-transition: all 1.2s ease-in-out;
-	transition: all 1.2s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 .health-image.visible {
 	opacity: 1;

@@ -49,9 +49,9 @@ section:nth-child(1) img {
 	-webkit-transform: translateX(-100px);
 	-ms-transform: translateX(-100px);
 	transform: translateX(-100px);
-	-webkit-transition: all 1.2s ease-in-out;
-	-o-transition: all 1.2s ease-in-out;
-	transition: all 1.2s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 	width: 50%;
 }
 section:nth-child(1) img.visible {
@@ -131,9 +131,9 @@ section:last-child .section-three-image {
 	-webkit-transform: translateX(100px);
 	-ms-transform: translateX(100px);
 	transform: translateX(100px);
-	-webkit-transition: all 1.2s ease-in-out;
-	-o-transition: all 1.2s ease-in-out;
-	transition: all 1.2s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 	width: 50%;
 }
 section:last-child .section-three-image.visible {
@@ -218,6 +218,12 @@ section:last-child .section-three-image.visible {
 	background-color: var(--primary-color);
 	color: var(--text-color);
 }
-.section-three .section-three-button img {
+.section-three .section-three-button:hover svg path {
+	fill: var(--text-color);
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.section-three .section-three-button svg {
 	margin-left: 14px;
 }
