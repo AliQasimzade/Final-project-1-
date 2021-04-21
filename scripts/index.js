@@ -8,7 +8,7 @@ let aboutUs = document.querySelector('.about-us');
 let ourServices = document.querySelector('.our-services');
 let sectionThreeWrapper = document.querySelector('.section-three-wrapper');
 let cardsWrapper = document.querySelector('.cards-wrapper');
-let footer = document.querySelector('ul');
+let footer = document.querySelector('.footer-wrapper');
 
 window.addEventListener('scroll', () => {
 	headerAnimation();

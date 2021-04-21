@@ -39,9 +39,9 @@ footer {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	opacity: 0;
-	-webkit-transform: translateX(100px);
-	-ms-transform: translateX(100px);
-	transform: translateX(100px);
+	-webkit-transform: translateY(100px);
+	-ms-transform: translateY(100px);
+	transform: translateY(100px);
 	-webkit-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
@@ -49,9 +49,9 @@ footer {
 }
 .footer-wrapper ul.visible {
 	opacity: 1;
-	-webkit-transform: translateX(0px);
-	-ms-transform: translateX(0px);
-	transform: translateX(0px);
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
 }
 
 .footer-wrapper ul li {
