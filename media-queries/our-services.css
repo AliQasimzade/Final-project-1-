@@ -6,7 +6,7 @@
 		font-size: 0.875em;
 	}
 }
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 830px) {
 	.our-services-wrapper .services-cards {
 		width: 100%;
 	}
@@ -63,7 +63,7 @@
 	}
 }
 
-@media only screen and (max-width: 1172px) {
+@media only screen and (max-width: 1232px) {
 	.services-cards {
 		place-items: center;
 	}

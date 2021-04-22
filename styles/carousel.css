@@ -23,7 +23,7 @@
 }
 .carousel {
 	background: -o-linear-gradient(241.82deg, #67c3f3 9.05%, #5a98f2 76.74%);
-	background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+	background:var(--carousel-background);
 	border-radius: 24px;
 	height: 425px;
 	overflow: hidden;
@@ -77,10 +77,8 @@
 }
 .slide:first-child .slide-header p {
 	color: var(--text-color);
-	font-family: Mulish;
 	font-size: 2.25em;
-	font-style: normal;
-	font-weight: bold;
+	font-family:Mulish-Bold;
 	line-height: 3rem;
 	margin-bottom: 25px;
 }
@@ -126,27 +124,23 @@
 }
 .slide-image .name {
 	color: var(--text-color);
-	font-family: Mulish;
 	font-size: 22px;
-	font-style: normal;
-	font-weight: bold;
+	font-family:Mulish-Bold;
 	line-height: 48px;
+	margin: 0;
 }
 .slide-image .job {
 	color: rgba(255, 255, 255, 0.85);
-	font-family: Mulish;
 	font-size: 1.125em;
-	font-style: normal;
-	font-weight: normal;
+	font-family: Mulish-Regular;
+	margin: 0;
 }
 .slide-article {
 	color: rgba(255, 255, 255, 0.9);
-	font-family: Mulish;
 	font-size: 1.2em;
-	font-style: normal;
-	font-weight: 400;
+	font-family: Mulish-Regular;
 	line-height: 30px;
-	width: 45%;
+	width: 42%;
 }
 .dots-arrows {
 	align-items: center;
@@ -161,7 +155,7 @@
 	margin-top: 42px;
 }
 .dots-arrows img,
-.dots-arrows svg{
+.dots-arrows svg {
 	cursor: pointer;
 }
 .dots-arrows .dot:not(:nth-child(1)) {
@@ -169,8 +163,8 @@
 }
 
 .dots-arrows .arrow-left {
-	-webkit-filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
-	filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
+	-webkit-filter: var(--drop-shadow-left);
+	filter: var(--drop-shadow-left);
 	-webkit-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	transform: rotate(180deg);
@@ -180,8 +174,8 @@
 }
 
 .dots-arrows .arrow-right {
-	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	-webkit-filter: var(--drop-shadow-right);
+	filter: var(--drop-shadow-right);
 	margin-left: 91px;
 }
 .dot.active {
