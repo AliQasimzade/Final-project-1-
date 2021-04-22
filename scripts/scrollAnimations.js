@@ -9,9 +9,7 @@ const sectionThreeimg = document.querySelector('.section-three-image');
 const sectionThree = document.querySelector(".section-three");
 const cardsArticle = document.querySelector('.cards-article');
 const cardsContainer = document.querySelector('.cards-container');
-const options = {
-	rootMargin:"20px"
-}
+
 const handleIntersection = (entries) => {
 	entries.map((entry) => {
 		if (entry.isIntersecting) {
@@ -20,7 +18,7 @@ const handleIntersection = (entries) => {
 	});
 }
 
-const observer = new IntersectionObserver(handleIntersection, options);
+const observer = new IntersectionObserver(handleIntersection);
 
 observer.observe(ul);
 observer.observe(healthInfo);
