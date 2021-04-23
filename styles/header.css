@@ -12,8 +12,8 @@
 	flex-direction: column;
 	-ms-flex-pack: center;
 	justify-content: center;
-	width: 100%;
 	overflow-x: hidden;
+	width: 100%;
 }
 header {
 	height: 5em;
@@ -55,8 +55,8 @@ nav {
 }
 nav a {
 	color: var(--link-color);
-	font-size: 1.125em;
 	font-family: Mulish-Regular;
+	font-size: 1.125em;
 	margin: 13px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -164,16 +164,16 @@ nav a:hover {
 }
 
 .health-info .health-heading {
+	font-family: Mulish-Bold;
 	font-size: 3em;
-	font-family:Mulish-Bold;
 	line-height: 3.5rem;
 	margin-bottom: 25px;
 }
 .health-info .health-article {
 	color: var(--article-color);
+	font-family: Mulish-Light;
 	font-size: 1.31em;
 	line-height: 2rem;
-	font-family: Mulish-Light;
 	margin-bottom: 45px;
 }
 .health-info button {
@@ -182,8 +182,8 @@ nav a:hover {
 	border-radius: 55px;
 	color: var(--text-color);
 	cursor: pointer;
-	font-size: 1.125em;
 	font-family: Mulish-Bold;
+	font-size: 1.125em;
 	outline: none;
 	padding: 0.97em 2.19em;
 	-webkit-transition: all 0.3s ease-in-out;

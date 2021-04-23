@@ -1,4 +1,7 @@
 @media only screen and (max-width: 500px) {
+	.our-services-wrapper .services-cards .service-card {
+		box-shadow: var(--service-card-box-shadow);
+	}
 	.service-card .service-card-wrapper .service-card-head {
 		font-size: 1.25em;
 	}

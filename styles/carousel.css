@@ -23,7 +23,7 @@
 }
 .carousel {
 	background: -o-linear-gradient(241.82deg, #67c3f3 9.05%, #5a98f2 76.74%);
-	background:var(--carousel-background);
+	background: var(--linear-gradient);
 	border-radius: 24px;
 	height: 425px;
 	overflow: hidden;
@@ -77,8 +77,8 @@
 }
 .slide:first-child .slide-header p {
 	color: var(--text-color);
+	font-family: Mulish-Bold;
 	font-size: 2.25em;
-	font-family:Mulish-Bold;
 	line-height: 3rem;
 	margin-bottom: 25px;
 }
@@ -124,21 +124,21 @@
 }
 .slide-image .name {
 	color: var(--text-color);
+	font-family: Mulish-Bold;
 	font-size: 22px;
-	font-family:Mulish-Bold;
 	line-height: 48px;
 	margin: 0;
 }
 .slide-image .job {
 	color: rgba(255, 255, 255, 0.85);
-	font-size: 1.125em;
 	font-family: Mulish-Regular;
+	font-size: 1.125em;
 	margin: 0;
 }
 .slide-article {
 	color: rgba(255, 255, 255, 0.9);
-	font-size: 1.2em;
 	font-family: Mulish-Regular;
+	font-size: 1.2em;
 	line-height: 30px;
 	width: 42%;
 }

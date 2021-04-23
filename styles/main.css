@@ -135,8 +135,8 @@ section:nth-child(1) img.visible {
 
 .section-one p:first-child {
 	color: var(--black-color);
-	font-size: 2.25em;
 	font-family: Mulish-Bold;
+	font-size: 2.25em;
 	line-height: 3.5rem;
 	margin-bottom: 82px;
 	margin-top: 0;
@@ -146,12 +146,12 @@ section:first-child .section-one .line {
 }
 .section-one .section-one-article {
 	color: var(--article-color);
+	font-family: Mulish-Light;
 	font-size: 1.125em;
-	font-family:Mulish-Light;
 	line-height: 1.87em;
 	margin-bottom: 37px;
-	width: 80%;
 	margin-top: 0;
+	width: 80%;
 }
 
 .section-one button {
@@ -160,8 +160,8 @@ section:first-child .section-one .line {
 	border-radius: 55px;
 	color: var(--primary-color);
 	cursor: pointer;
-	font-size: 1.125em;
 	font-family: Mulish-Bold;
+	font-size: 1.125em;
 	outline: none;
 	padding: 1em 2.8em;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -306,8 +306,8 @@ section:last-child .section-three-image.visible {
 
 .section-three p:first-child {
 	color: var(--black-color);
-	font-size: 2.25em;
 	font-family: Mulish-Bold;
+	font-size: 2.25em;
 	line-height: 3rem;
 	margin-bottom: 30px;
 	width: 65%;
@@ -315,8 +315,8 @@ section:last-child .section-three-image.visible {
 
 .section-three .section-three-article {
 	color: var(--article-color);
-	font-size: 1.125em;
 	font-family: Mulish-Light;
+	font-size: 1.125em;
 	line-height: 1.87em;
 	margin-bottom: 40px;
 }
@@ -335,8 +335,8 @@ section:last-child .section-three-image.visible {
 	display: flex;
 	-ms-flex-align: center;
 	-ms-flex-pack: center;
-	font-size: 1.125em;
 	font-family: Mulish-Bold;
+	font-size: 1.125em;
 	justify-content: center;
 	outline: none;
 	padding: 0.95em 2.35em;

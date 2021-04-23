@@ -6,6 +6,9 @@
 		padding-bottom: 30px;
 		width: 100%;
 	}
+	.cards .cards-wrapper .cards-container .card:hover {
+		box-shadow: var(--service-card-box-shadow);
+	}
 	.cards-wrapper .cards-article p {
 		margin-bottom: 18px;
 		text-align: center;
@@ -41,7 +44,7 @@
 	.cards-wrapper .cards-container .card button {
 		font-size: 1em;
 	}
-	.cards-wrapper .view-button{
+	.cards-wrapper .view-button {
 		font-size: 0.9375em;
 		padding: 0.8em 2.2em;
 	}

@@ -64,6 +64,7 @@
 	}
 	.dots-arrows .arrow-right,
 	.dots-arrows .arrow-left {
+		filter: none;
 		height: 22px;
 		margin-left: 10px;
 	}
