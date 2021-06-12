@@ -116,9 +116,7 @@
 	}
 }
 @media only screen and (max-width: 1500px) {
-	header .navigation img {
-		width: 8.2em;
-	}
+
 	.navigation nav a {
 		font-size: 1em;
 	}

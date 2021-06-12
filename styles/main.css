@@ -173,7 +173,7 @@ section:first-child .section-one .line {
 	background-color: var(--primary-color);
 	color: var(--text-color);
 }
-main section:nth-child(2) {
+main .section-two {
 	background-image: url('../images/element\ \(1\).png');
 	background-position: 103%;
 	background-repeat: no-repeat;
@@ -181,7 +181,7 @@ main section:nth-child(2) {
 	margin-top: 20px;
 	width: 100%;
 }
-main section:last-child {
+main .section-three-wrapper {
 	align-items: center;
 	-webkit-box-align: center;
 	-webkit-box-pack: justify;
@@ -195,7 +195,7 @@ main section:last-child {
 	max-width: 1300px;
 	padding: 0 40px;
 }
-section:last-child .section-three-image {
+.section-three-wrapper .section-three-image {
 	-webkit-animation: sectionThreeImageAnimation 0.1s ease-in-out forwards;
 	animation: sectionThreeImageAnimation 0.1s ease-in-out forwards;
 	opacity: 0;
@@ -221,7 +221,7 @@ section:last-child .section-three-image {
 		transform: translateX(130px);
 	}
 }
-section:last-child .section-three-image.visible {
+.section-three-wrapper .section-three-image.visible {
 	-webkit-animation: visibleSectionThreeImageAnimation 1s ease-in-out forwards;
 	animation: visibleSectionThreeImageAnimation 1s ease-in-out forwards;
 }

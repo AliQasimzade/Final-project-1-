@@ -42,7 +42,7 @@
 	flex-direction: column;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 	opacity: 0;
 }
 @-webkit-keyframes servicesHeaderAnimation {
@@ -137,6 +137,7 @@
 	row-gap: 2.3em;
 	width: 90%;
 	column-gap: 34px;
+	padding-top:50px;
 }
 .services-cards > *:nth-child(1) {
 	-ms-grid-column: 1;

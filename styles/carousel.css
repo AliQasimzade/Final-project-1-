@@ -1,6 +1,7 @@
 .carousel-container {
-	margin-top: 251px;
+	margin-top: 200px;
 	width: 100%;
+	padding-top: 80px;
 }
 .carousel-wrapper {
 	-webkit-box-direction: normal;
@@ -47,7 +48,7 @@
 	height: 100%;
 	width: 50%;
 }
-.slide:first-child {
+.slide {
 	align-items: center;
 	-webkit-box-align: center;
 	-webkit-box-direction: normal;
@@ -62,7 +63,7 @@
 	-ms-flex-pack: center;
 	justify-content: center;
 }
-.slide:first-child .slide-header {
+.slide .slide-header {
 	align-items: center;
 	-webkit-box-align: center;
 	-webkit-box-direction: normal;
@@ -75,7 +76,7 @@
 	flex-direction: column;
 	margin-bottom: 40px;
 }
-.slide:first-child .slide-header p {
+.slide .slide-header p {
 	color: var(--text-color);
 	font-size: 2.25em;
 	font-family:Mulish-Bold;

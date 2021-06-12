@@ -72,6 +72,10 @@ nav a:hover {
 	color: var(--link-hover-color);
 	opacity: 1;
 }
+nav .link.active{
+	color:var(--link-hover-color);
+	opacity: 1;
+}
 .banner-wrapper {
 	align-items: center;
 	background-image: url('../images/element.png');

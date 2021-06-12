@@ -47,7 +47,7 @@
 		font-size: 0.93em;
 		padding: 0.8em 2.2em;
 	}
-	main section:nth-child(2) {
+	main .section-two {
 		display: none;
 	}
 
